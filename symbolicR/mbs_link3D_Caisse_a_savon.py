@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Tue Mar 11 08:42:53 2025
+#	==> Generation Date: Tue Mar 11 09:40:44 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Caisse_a_savon
 #
-#	==> Number of joints: 14
+#	==> Number of joints: 12
 #
 #	==> Function: F27 - Link Forces (3D)
 #
