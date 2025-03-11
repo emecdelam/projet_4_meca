@@ -63,6 +63,11 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     dxF = mbs_data.dpt[1:, idpt]
 
     # =================================================================================
+    import tgc_car_kine_wheel
+    import tgc_bakker_contact
+    pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
+    
+
     K  = 200000.0
     D  = 150.0
     R  = 0.289
@@ -72,19 +77,17 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     
     Vz_wheel = VxF[3] + R * OMxF[3] #vitesse du centre - vitesse angulaire en z * rayon
     
-    z_sol = 0
-    # Déformation de la roue par rapport au sol
-    e = z_sol - z_wheel
-    
-    if e > 0:
-        Fz = K * e + D * Vz_wheel
+    if pen < 0:
+        Frad = K * pen + D * Vz_wheel
+        Fx, Fy, Mz =  tgc_bakker_contact.tgc_bakker_contact(Frad, anglis, ancamb, gliss, mbs_data)
+        print(Fx, Fy, Mz, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        Fx = Fx[0]
+        Fy = Fy[0]
+        Mz = Mz[0]
 
     # =================================================================================
 
-    import tgc_car_kine_wheel
-    import tgc_bakker_contact
-    pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
-    Fx, Fy, Mz = tgc_bakker_contact(Frad, anglis, ancamb, gliss, mbs_data)
+
 
     # =================================================================================
     Swr = mbs_data.SWr[ixF]

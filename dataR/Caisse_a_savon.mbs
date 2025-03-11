@@ -371,9 +371,7 @@
       </joint>
       <mass>20.0</mass>
       <inertia>
-        <Ixx>0.5</Ixx>
         <Iyy>0.5</Iyy>
-        <Izz>0.5</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -496,9 +494,7 @@
       </joint>
       <mass>20.0</mass>
       <inertia>
-        <Ixx>0.5</Ixx>
         <Iyy>0.5</Iyy>
-        <Izz>0.5</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -643,9 +639,7 @@
       </joint>
       <mass>20.0</mass>
       <inertia>
-        <Ixx>0.5</Ixx>
         <Iyy>0.5</Iyy>
-        <Izz>0.5</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -790,9 +784,7 @@
       </joint>
       <mass>20.0</mass>
       <inertia>
-        <Ixx>0.5</Ixx>
         <Iyy>0.5</Iyy>
-        <Izz>0.5</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -891,6 +883,17 @@
       </graphics>
     </body>
   </bodytree>
+  <user_models>
+    <!--this is the userModel list-->
+    <user_model>
+      <name>FrontTire</name>
+      <parameter>
+        <name>R</name>
+        <type>scalar</type>
+        <value>0.275</value>
+      </parameter>
+    </user_model>
+  </user_models>
   <x3D>
     <background>
       <!--This is the background properties-->

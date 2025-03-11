@@ -10,7 +10,7 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Tue Mar 11 09:40:44 2025
+#	==> Generation Date: Tue Mar 11 10:18:23 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Caisse_a_savon
