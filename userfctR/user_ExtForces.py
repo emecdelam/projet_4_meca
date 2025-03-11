@@ -62,15 +62,31 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     idpt = mbs_data.xfidpt[ixF]
     dxF = mbs_data.dpt[1:, idpt]
 
-    # Example : Contact force with a wall when X coordinate is higher than 1m.
-    #           The force is perfectly horizontal (inertial frame)
-    # xlim = 1.0 # m
-    # kwall= 1e5 # N/m
-    # if PxF[1]>xlim:
-    #     Fx = (PxF[1]-xlim)*kwall
+    # =================================================================================
+    K  = 200000.0
+    D  = 150.0
+    R  = 0.289
+    
+    # Changement de hauteur et vitesse dû à la rotation
+    z_wheel = PxF[3] - R * RxF[3, 3] #hauteur du centre - hauteur du bout du pneu avec angle
+    
+    Vz_wheel = VxF[3] + R * OMxF[3] #vitesse du centre - vitesse angulaire en z * rayon
+    
+    z_sol = 0
+    # Déformation de la roue par rapport au sol
+    e = z_sol - z_wheel
+    
+    if e > 0:
+        Fz = K * e + D * Vz_wheel
 
-    # Concatenating force, torque and force application point to returned array.
-    # This must not be modified.
+    # =================================================================================
+
+    import tgc_car_kine_wheel
+    import tgc_bakker_contact
+    pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
+    Fx, Fy, Mz = tgc_bakker_contact(Frad, anglis, ancamb, gliss, mbs_data)
+
+    # =================================================================================
     Swr = mbs_data.SWr[ixF]
     Swr[1:] = [Fx, Fy, Fz, Mx, My, Mz, dxF[0], dxF[1], dxF[2]]
 
