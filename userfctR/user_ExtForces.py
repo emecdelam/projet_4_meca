@@ -73,7 +73,7 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     if pen > 0:
         Fz = pen * K - D * VxF[3]
         Fz = Fz[0]
-
+        Fx, Fy, Mz = tgc_bakker_contact.tgc_bakker_contact(Fz, anglis, ancamb, gliss, mbs_data)
     # Example : Contact force with a wall when X coordinate is higher than 1m.
     #           The force is perfectly horizontal (inertial frame)
     # xlim = 1.0 # m
