@@ -10,14 +10,14 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Tue Mar 11 10:18:23 2025
+#	==> Generation Date: Tue Mar 11 12:07:37 2025
 #	==> using automatic loading with extension .mbs 
 #
-#	==> Project name: Caisse_a_savon
+#	==> Project name: MON_LIV
 #
 #	==> Number of joints: 12
 #
-#	==> Function: F27 - Link Forces (3D)
+#	==> Function: F8 - Constraints and Constraints Jacobian(h, J)
 #
 #	==> Git hash: a9259031f25de7c9f86dbac08464ef31e84ae3b1
 #
@@ -25,19 +25,14 @@
 #
 
 from math import sin, cos
-from numpy import zeros
 
-def link3D(frc, trq, s, tsim):
+def cons_hJ(h, Jac, s):
     q = s.q
-    qd = s.qd
-    frc = s.frc
-    trq = s.trq
-
 
 # Number of continuation lines = 0
 
     print("ERROR : Your symbolic files seem obsolete, i.e. not up-to-date with your MBsysPad model. ")
     print("        Please regenerate your symbolic files (MBsysPad->Tools->Generate Symbolic Files). Exiting. ")
-    print("        Error raised in mbs_link3D.")
+    print("        Error raised in mbs_cons_hJ.")
     s.flag_stop = 1
 

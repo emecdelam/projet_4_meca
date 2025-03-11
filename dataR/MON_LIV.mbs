@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mbsDescR7>
-  <mbsname>Caisse_a_savon</mbsname>
+  <mbsname>MON_LIV</mbsname>
   <mbsyspad_version>1.28.0</mbsyspad_version>
   <base>
     <!--this is the base body-->
@@ -15,13 +15,13 @@
     <graphics>
       <x2D>
         <position>
-          <x>751.0</x>
-          <y>616.0</y>
+          <x>817.0</x>
+          <y>390.0</y>
         </position>
         <base_body>
           <position>
-            <x>-538.0</x>
-            <y>-59.0</y>
+            <x>-422.0</x>
+            <y>-48.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -29,25 +29,25 @@
           </name_pos>
           <shape>rectangle</shape>
           <size>
-            <x>1078.0</x>
-            <y>122.0</y>
+            <x>848.0</x>
+            <y>95.0</y>
           </size>
           <control_points>
             <control_point>
-              <x>238.0</x>
-              <y>-59.0</y>
+              <x>81.0</x>
+              <y>-192.0</y>
             </control_point>
             <control_point>
-              <x>238.0</x>
-              <y>41.0</y>
+              <x>81.0</x>
+              <y>220.0</y>
             </control_point>
             <control_point>
-              <x>-233.0</x>
-              <y>41.0</y>
+              <x>-90.0</x>
+              <y>220.0</y>
             </control_point>
             <control_point>
-              <x>-233.0</x>
-              <y>-59.0</y>
+              <x>-90.0</x>
+              <y>-192.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -56,42 +56,13 @@
       <x3D>
         <x3D_points />
         <x3D_lines />
-        <x3D_shapes>
-          <box>
-            <name>New_Shape</name>
-            <position>
-              <x>0.0</x>
-              <y>0.0</y>
-              <z>0.0</z>
-            </position>
-            <scale>
-              <x>1.0</x>
-              <y>1.0</y>
-              <z>1.0</z>
-            </scale>
-            <rotation>
-              <x>0.0</x>
-              <y>0.0</y>
-              <z>0.0</z>
-            </rotation>
-            <color R="0" G="102" B="0" />
-            <specularColor R="255" G="255" B="255" />
-            <shininess>250.0</shininess>
-            <transparency>0.0</transparency>
-            <size>
-              <x>5.0</x>
-              <y>5.0</y>
-              <z>0.0</z>
-            </size>
-          </box>
-        </x3D_shapes>
       </x3D>
     </graphics>
   </base>
   <bodytree>
     <!--this is the body tree-->
     <body>
-      <bodyname>Body_1</bodyname>
+      <bodyname>Main_Body</bodyname>
       <parent>
         <bodyname>base</bodyname>
         <pointname>origin</pointname>
@@ -103,8 +74,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>708.0</x>
-              <y>532.0</y>
+              <x>743.0</x>
+              <y>360.0</y>
             </position>
           </x2D>
           <x3D>
@@ -120,8 +91,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>800.0</x>
-              <y>539.0</y>
+              <x>875.0</x>
+              <y>338.0</y>
             </position>
           </x2D>
           <x3D>
@@ -135,13 +106,13 @@
         <type>T3</type>
         <nature>independent</nature>
         <initialvalue>
-          <q>0.3</q>
+          <q>1.0</q>
         </initialvalue>
         <graphics>
           <x2D>
             <position>
-              <x>798.0</x>
-              <y>482.0</y>
+              <x>745.0</x>
+              <y>334.0</y>
             </position>
           </x2D>
           <x3D>
@@ -152,13 +123,13 @@
       </joint>
       <joint>
         <jointname>Joint_3</jointname>
-        <type>R3</type>
+        <type>R1</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>746.0</x>
-              <y>470.0</y>
+              <x>875.0</x>
+              <y>307.0</y>
             </position>
           </x2D>
           <x3D>
@@ -169,13 +140,13 @@
       </joint>
       <joint>
         <jointname>Joint_4</jointname>
-        <type>R1</type>
+        <type>R2</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>796.0</x>
-              <y>446.0</y>
+              <x>744.0</x>
+              <y>300.0</y>
             </position>
           </x2D>
           <x3D>
@@ -186,13 +157,13 @@
       </joint>
       <joint>
         <jointname>Joint_5</jointname>
-        <type>R2</type>
+        <type>R3</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>758.0</x>
-              <y>351.0</y>
+              <x>829.0</x>
+              <y>268.0</y>
             </position>
           </x2D>
           <x3D>
@@ -201,14 +172,14 @@
           </x3D>
         </graphics>
       </joint>
-      <mass>305.0</mass>
+      <mass>4.0</mass>
       <inertia>
-        <Ixx>135.0</Ixx>
-        <Iyy>135.0</Iyy>
-        <Izz>135.0</Izz>
+        <Ixx>0.4</Ixx>
+        <Iyy>0.4</Iyy>
+        <Izz>0.4</Izz>
       </inertia>
       <point>
-        <pointname>ArD</pointname>
+        <pointname>Point_0</pointname>
         <coordinates>
           <x>0.5</x>
           <y>-0.5</y>
@@ -217,32 +188,15 @@
         <graphics>
           <x2D>
             <position>
-              <x>990.0</x>
-              <y>422.0</y>
+              <x>1009.0</x>
+              <y>93.0</y>
             </position>
           </x2D>
           <x3D />
         </graphics>
       </point>
       <point>
-        <pointname>ArG</pointname>
-        <coordinates>
-          <x>-0.5</x>
-          <y>-0.5</y>
-          <z>0.0</z>
-        </coordinates>
-        <graphics>
-          <x2D>
-            <position>
-              <x>548.0</x>
-              <y>421.0</y>
-            </position>
-          </x2D>
-          <x3D />
-        </graphics>
-      </point>
-      <point>
-        <pointname>AvD</pointname>
+        <pointname>Point_1</pointname>
         <coordinates>
           <x>0.5</x>
           <y>0.5</y>
@@ -251,15 +205,15 @@
         <graphics>
           <x2D>
             <position>
-              <x>993.0</x>
-              <y>103.0</y>
+              <x>1009.0</x>
+              <y>300.0</y>
             </position>
           </x2D>
           <x3D />
         </graphics>
       </point>
       <point>
-        <pointname>AvG</pointname>
+        <pointname>Point_2</pointname>
         <coordinates>
           <x>-0.5</x>
           <y>0.5</y>
@@ -268,8 +222,25 @@
         <graphics>
           <x2D>
             <position>
-              <x>549.0</x>
-              <y>107.0</y>
+              <x>651.0</x>
+              <y>300.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_3</pointname>
+        <coordinates>
+          <x>-0.5</x>
+          <y>-0.5</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>648.0</x>
+              <y>88.0</y>
             </position>
           </x2D>
           <x3D />
@@ -278,8 +249,8 @@
       <graphics>
         <x2D>
           <position>
-            <x>-216.0</x>
-            <y>-252.0</y>
+            <x>-192.0</x>
+            <y>-191.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -287,25 +258,25 @@
           </name_pos>
           <shape>rectangle</shape>
           <size>
-            <x>455.0</x>
-            <y>330.0</y>
+            <x>390.0</x>
+            <y>240.0</y>
           </size>
           <control_points>
             <control_point>
-              <x>239.0</x>
-              <y>-252.0</y>
+              <x>198.0</x>
+              <y>-191.0</y>
             </control_point>
             <control_point>
-              <x>239.0</x>
-              <y>78.0</y>
+              <x>198.0</x>
+              <y>49.0</y>
             </control_point>
             <control_point>
-              <x>-216.0</x>
-              <y>78.0</y>
+              <x>-192.0</x>
+              <y>49.0</y>
             </control_point>
             <control_point>
-              <x>-216.0</x>
-              <y>-252.0</y>
+              <x>-192.0</x>
+              <y>-191.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -314,53 +285,24 @@
           <x3D_com />
           <x3D_points />
           <x3D_lines />
-          <x3D_shapes>
-            <box>
-              <name>New_Shape</name>
-              <position>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </position>
-              <scale>
-                <x>1.0</x>
-                <y>1.0</y>
-                <z>1.0</z>
-              </scale>
-              <rotation>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </rotation>
-              <color R="255" G="204" B="0" />
-              <specularColor R="255" G="255" B="255" />
-              <shininess>250.0</shininess>
-              <transparency>0.5</transparency>
-              <size>
-                <x>0.6</x>
-                <y>1.0</y>
-                <z>0.2</z>
-              </size>
-            </box>
-          </x3D_shapes>
         </x3D>
       </graphics>
     </body>
     <body>
-      <bodyname>RouArD</bodyname>
+      <bodyname>FrontWheelg</bodyname>
       <parent>
-        <bodyname>Body_1</bodyname>
-        <pointname>ArD</pointname>
+        <bodyname>Main_Body</bodyname>
+        <pointname>Point_0</pointname>
       </parent>
       <joint>
-        <jointname>ArDR2</jointname>
-        <type>R2</type>
+        <jointname>Joint_8</jointname>
+        <type>R1</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>1130.0</x>
-              <y>423.0</y>
+              <x>1108.0</x>
+              <y>129.0</y>
             </position>
           </x2D>
           <x3D>
@@ -369,121 +311,15 @@
           </x3D>
         </graphics>
       </joint>
-      <mass>20.0</mass>
-      <inertia>
-        <Iyy>0.5</Iyy>
-      </inertia>
-      <point>
-        <pointname>origin</pointname>
-        <coordinates>
-          <x>0.0</x>
-          <y>0.0</y>
-          <z>0.0</z>
-        </coordinates>
-        <extforce name="ExtForce_3" Pos="true" Rot="true" Vit="true" Om="true" Acc="true" Omp="true">
-          <x3D>
-            <force show="true" showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
-              <x_color R="255" G="0" B="0" />
-              <y_color R="0" G="255" B="0" />
-              <z_color R="0" G="0" B="255" />
-              <resultant_color R="0" G="0" B="0" />
-              <diameter>0.05</diameter>
-              <scale>1.0</scale>
-            </force>
-            <torque showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
-              <x_color R="255" G="0" B="0" />
-              <y_color R="0" G="255" B="0" />
-              <z_color R="0" G="0" B="255" />
-              <resultant_color R="0" G="0" B="0" />
-              <diameter>0.1</diameter>
-              <scale>1.0</scale>
-            </torque>
-          </x3D>
-        </extforce>
-      </point>
-      <graphics>
-        <x2D>
-          <position>
-            <x>2.0</x>
-            <y>5.0</y>
-          </position>
-          <name_pos>
-            <x>0.0</x>
-            <y>0.0</y>
-          </name_pos>
-          <shape>ellipse</shape>
-          <size>
-            <x>20.0</x>
-            <y>62.0</y>
-          </size>
-          <control_points>
-            <control_point>
-              <x>22.0</x>
-              <y>5.0</y>
-            </control_point>
-            <control_point>
-              <x>2.0</x>
-              <y>67.0</y>
-            </control_point>
-            <control_point>
-              <x>-18.0</x>
-              <y>5.0</y>
-            </control_point>
-            <control_point>
-              <x>2.0</x>
-              <y>-57.0</y>
-            </control_point>
-          </control_points>
-          <angle>0.0</angle>
-        </x2D>
-        <x3D>
-          <x3D_com />
-          <x3D_points />
-          <x3D_lines />
-          <x3D_shapes>
-            <cylinder>
-              <name>New_Shape</name>
-              <position>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </position>
-              <scale>
-                <x>1.0</x>
-                <y>1.0</y>
-                <z>1.0</z>
-              </scale>
-              <rotation>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>1.5707963267948966</z>
-              </rotation>
-              <color R="0" G="0" B="0" />
-              <specularColor R="255" G="255" B="255" />
-              <shininess>250.0</shininess>
-              <transparency>0.5</transparency>
-              <radius>0.3</radius>
-              <height>0.1</height>
-            </cylinder>
-          </x3D_shapes>
-        </x3D>
-      </graphics>
-    </body>
-    <body>
-      <bodyname>RouArG</bodyname>
-      <parent>
-        <bodyname>Body_1</bodyname>
-        <pointname>ArG</pointname>
-      </parent>
       <joint>
-        <jointname>ArGR2</jointname>
-        <type>R2</type>
+        <jointname>Joint_11</jointname>
+        <type>R3</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>424.0</x>
-              <y>426.0</y>
+              <x>1164.0</x>
+              <y>105.0</y>
             </position>
           </x2D>
           <x3D>
@@ -492,9 +328,11 @@
           </x3D>
         </graphics>
       </joint>
-      <mass>20.0</mass>
+      <mass>1.0</mass>
       <inertia>
-        <Iyy>0.5</Iyy>
+        <Ixx>0.1</Ixx>
+        <Iyy>0.1</Iyy>
+        <Izz>0.1</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -527,34 +365,22 @@
       <graphics>
         <x2D>
           <position>
-            <x>0.0</x>
-            <y>-1.0</y>
+            <x>1.0</x>
+            <y>-21.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
             <y>0.0</y>
           </name_pos>
-          <shape>ellipse</shape>
+          <shape>circle</shape>
           <size>
-            <x>19.0</x>
-            <y>64.0</y>
+            <x>50.0</x>
+            <y>50.0</y>
           </size>
           <control_points>
             <control_point>
-              <x>19.0</x>
-              <y>-1.0</y>
-            </control_point>
-            <control_point>
-              <x>0.0</x>
-              <y>63.0</y>
-            </control_point>
-            <control_point>
-              <x>-19.0</x>
-              <y>-1.0</y>
-            </control_point>
-            <control_point>
-              <x>0.0</x>
-              <y>-65.0</y>
+              <x>51.0</x>
+              <y>-21.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -563,72 +389,24 @@
           <x3D_com />
           <x3D_points />
           <x3D_lines />
-          <x3D_shapes>
-            <cylinder>
-              <name>New_Shape</name>
-              <position>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </position>
-              <scale>
-                <x>1.0</x>
-                <y>1.0</y>
-                <z>1.0</z>
-              </scale>
-              <rotation>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>1.5707963267948966</z>
-              </rotation>
-              <color R="0" G="0" B="0" />
-              <specularColor R="255" G="255" B="255" />
-              <shininess>250.0</shininess>
-              <transparency>0.5</transparency>
-              <radius>0.3</radius>
-              <height>0.1</height>
-            </cylinder>
-          </x3D_shapes>
         </x3D>
       </graphics>
     </body>
     <body>
-      <bodyname>RouAvD</bodyname>
+      <bodyname>FrontWheeld</bodyname>
       <parent>
-        <bodyname>Body_1</bodyname>
-        <pointname>AvD</pointname>
+        <bodyname>Main_Body</bodyname>
+        <pointname>Point_1</pointname>
       </parent>
       <joint>
-        <jointname>AvDR3</jointname>
-        <type>R3</type>
-        <nature>driven</nature>
-        <symbols>
-          <q />
-          <qd />
-          <qdd />
-        </symbols>
-        <graphics>
-          <x2D>
-            <position>
-              <x>1050.0</x>
-              <y>104.0</y>
-            </position>
-          </x2D>
-          <x3D>
-            <x3D_joint />
-            <x3D_frame />
-          </x3D>
-        </graphics>
-      </joint>
-      <joint>
-        <jointname>AvDR2</jointname>
-        <type>R2</type>
+        <jointname>Joint_9</jointname>
+        <type>R1</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>1110.0</x>
-              <y>102.0</y>
+              <x>1151.0</x>
+              <y>267.0</y>
             </position>
           </x2D>
           <x3D>
@@ -637,9 +415,98 @@
           </x3D>
         </graphics>
       </joint>
-      <mass>20.0</mass>
+      <mass>1.0</mass>
       <inertia>
-        <Iyy>0.5</Iyy>
+        <Ixx>0.1</Ixx>
+        <Iyy>0.1</Iyy>
+        <Izz>0.1</Izz>
+      </inertia>
+      <point>
+        <pointname>origin</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <extforce name="ExtForce_3" Pos="true" Rot="true" Vit="true" Om="true" Acc="true" Omp="true">
+          <x3D>
+            <force show="true" showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.05</diameter>
+              <scale>1.0</scale>
+            </force>
+            <torque showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.1</diameter>
+              <scale>1.0</scale>
+            </torque>
+          </x3D>
+        </extforce>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-1.0</x>
+            <y>-25.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>circle</shape>
+          <size>
+            <x>44.0</x>
+            <y>44.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>43.0</x>
+              <y>-25.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>BackWheeld</bodyname>
+      <parent>
+        <bodyname>Main_Body</bodyname>
+        <pointname>Point_2</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_6</jointname>
+        <type>R1</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>575.0</x>
+              <y>301.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <mass>1.0</mass>
+      <inertia>
+        <Ixx>0.1</Ixx>
+        <Iyy>0.1</Iyy>
+        <Izz>0.1</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -672,34 +539,22 @@
       <graphics>
         <x2D>
           <position>
-            <x>2.0</x>
-            <y>2.0</y>
+            <x>-7.0</x>
+            <y>-12.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
             <y>0.0</y>
           </name_pos>
-          <shape>ellipse</shape>
+          <shape>circle</shape>
           <size>
-            <x>21.0</x>
-            <y>62.0</y>
+            <x>44.0</x>
+            <y>44.0</y>
           </size>
           <control_points>
             <control_point>
-              <x>23.0</x>
-              <y>2.0</y>
-            </control_point>
-            <control_point>
-              <x>2.0</x>
-              <y>64.0</y>
-            </control_point>
-            <control_point>
-              <x>-19.0</x>
-              <y>2.0</y>
-            </control_point>
-            <control_point>
-              <x>2.0</x>
-              <y>-60.0</y>
+              <x>37.0</x>
+              <y>-12.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -708,72 +563,24 @@
           <x3D_com />
           <x3D_points />
           <x3D_lines />
-          <x3D_shapes>
-            <cylinder>
-              <name>New_Shape</name>
-              <position>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </position>
-              <scale>
-                <x>1.0</x>
-                <y>1.0</y>
-                <z>1.0</z>
-              </scale>
-              <rotation>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>1.5707963267948966</z>
-              </rotation>
-              <color R="0" G="0" B="0" />
-              <specularColor R="255" G="255" B="255" />
-              <shininess>250.0</shininess>
-              <transparency>0.5</transparency>
-              <radius>0.3</radius>
-              <height>0.1</height>
-            </cylinder>
-          </x3D_shapes>
         </x3D>
       </graphics>
     </body>
     <body>
-      <bodyname>RouAvG</bodyname>
+      <bodyname>BackWheelg</bodyname>
       <parent>
-        <bodyname>Body_1</bodyname>
-        <pointname>AvG</pointname>
+        <bodyname>Main_Body</bodyname>
+        <pointname>Point_3</pointname>
       </parent>
       <joint>
-        <jointname>AvGR3</jointname>
-        <type>R3</type>
-        <nature>driven</nature>
-        <symbols>
-          <q />
-          <qd />
-          <qdd />
-        </symbols>
-        <graphics>
-          <x2D>
-            <position>
-              <x>490.0</x>
-              <y>108.0</y>
-            </position>
-          </x2D>
-          <x3D>
-            <x3D_joint />
-            <x3D_frame />
-          </x3D>
-        </graphics>
-      </joint>
-      <joint>
-        <jointname>AvGR2</jointname>
-        <type>R2</type>
+        <jointname>Joint_7</jointname>
+        <type>R1</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>422.0</x>
-              <y>108.0</y>
+              <x>545.0</x>
+              <y>98.0</y>
             </position>
           </x2D>
           <x3D>
@@ -782,9 +589,28 @@
           </x3D>
         </graphics>
       </joint>
-      <mass>20.0</mass>
+      <joint>
+        <jointname>Joint_10</jointname>
+        <type>R3</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>473.0</x>
+              <y>105.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <mass>1.0</mass>
       <inertia>
-        <Iyy>0.5</Iyy>
+        <Ixx>0.1</Ixx>
+        <Iyy>0.1</Iyy>
+        <Izz>0.1</Izz>
       </inertia>
       <point>
         <pointname>origin</pointname>
@@ -817,34 +643,22 @@
       <graphics>
         <x2D>
           <position>
-            <x>-2.0</x>
-            <y>-2.0</y>
+            <x>-7.0</x>
+            <y>-26.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
             <y>0.0</y>
           </name_pos>
-          <shape>ellipse</shape>
+          <shape>circle</shape>
           <size>
-            <x>21.0</x>
-            <y>63.0</y>
+            <x>65.0</x>
+            <y>65.0</y>
           </size>
           <control_points>
             <control_point>
-              <x>19.0</x>
-              <y>-2.0</y>
-            </control_point>
-            <control_point>
-              <x>-2.0</x>
-              <y>61.0</y>
-            </control_point>
-            <control_point>
-              <x>-23.0</x>
-              <y>-2.0</y>
-            </control_point>
-            <control_point>
-              <x>-2.0</x>
-              <y>-65.0</y>
+              <x>58.0</x>
+              <y>-26.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -853,32 +667,6 @@
           <x3D_com />
           <x3D_points />
           <x3D_lines />
-          <x3D_shapes>
-            <cylinder>
-              <name>New_Shape</name>
-              <position>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-              </position>
-              <scale>
-                <x>1.0</x>
-                <y>1.0</y>
-                <z>1.0</z>
-              </scale>
-              <rotation>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>1.5707963267948966</z>
-              </rotation>
-              <color R="0" G="0" B="0" />
-              <specularColor R="255" G="255" B="255" />
-              <shininess>250.0</shininess>
-              <transparency>0.5</transparency>
-              <radius>0.3</radius>
-              <height>0.1</height>
-            </cylinder>
-          </x3D_shapes>
         </x3D>
       </graphics>
     </body>
@@ -890,7 +678,7 @@
       <parameter>
         <name>R</name>
         <type>scalar</type>
-        <value>0.275</value>
+        <value>0.2</value>
       </parameter>
     </user_model>
   </user_models>

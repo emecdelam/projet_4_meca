@@ -1,6 +1,38 @@
 
 ##############################################################
-#	file1.gen 11/03/2025 10:18:23    errors
+#	file7.gen 11/03/2025 12:07:37    errors
+##############################################################
+git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
+Warning !
+Unknown option/flag found in generation file : useXML
+
+	Computation of the kinematics........
+
+	Computation of the dynamics....................
+
+		Joints   12  11  10   9   8   7   6   5   4   3
+
+		    -->   2   1
+
+	Elimination of the superfluous equations.....................
+
+
+		Maximum simultaneous symbolic expressions :  1397
+
+		Maximum number of allocated Kbytes :  65
+
+
+	The symbolic equations have been generated 
+	in the directory: /usr/local/robotran/users/LEPL1504/upload/
+
+
+ 		*** Generation symbolique reussie ! ***
+
+
+
+
+##############################################################
+#	file1.gen 11/03/2025 12:07:37    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -10,9 +42,34 @@ Unknown option/flag found in generation file : useXML
 	Elimination of the superfluous equations.....................
 
 
-		Maximum simultaneous symbolic expressions :  1680
+		Maximum simultaneous symbolic expressions :  1692
 
-		Maximum number of allocated Kbytes :  78
+		Maximum number of allocated Kbytes :  79
+
+
+	The symbolic equations have been generated 
+	in the directory: /usr/local/robotran/users/LEPL1504/upload/
+
+
+ 		*** Generation symbolique reussie ! ***
+
+
+
+
+##############################################################
+#	file5.gen 11/03/2025 12:07:37    errors
+##############################################################
+git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
+Warning !
+Unknown option/flag found in generation file : useXML
+
+
+	Elimination of the superfluous equations.....................
+
+
+		Maximum simultaneous symbolic expressions :  2133
+
+		Maximum number of allocated Kbytes :  99
 
 
 	The symbolic equations have been generated 

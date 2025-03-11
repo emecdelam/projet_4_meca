@@ -10,23 +10,23 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Tue Mar 11 10:18:23 2025
+#	==> Generation Date: Tue Mar 11 12:07:37 2025
 #	==> using automatic loading with extension .mbs 
 #
-#	==> Project name: Caisse_a_savon
+#	==> Project name: MON_LIV
 #
 #	==> Number of joints: 12
 #
-#	==> Function: F18 - Constraints Quadratic Velocity Terms (Jdqd)
+#	==> Function: F7 - Link Forces (1D)
 #
 #	==> Git hash: a9259031f25de7c9f86dbac08464ef31e84ae3b1
 #
 #	==> Input XML
 #
 
-from math import sin, cos
+from math import sin, cos, sqrt
 
-def cons_jdqd(Jdqd, s):
+def link(frc, trq, Flink, Z, Zd, s, tsim):
     q = s.q
     qd = s.qd
 
@@ -34,5 +34,6 @@ def cons_jdqd(Jdqd, s):
 
     print("ERROR : Your symbolic files seem obsolete, i.e. not up-to-date with your MBsysPad model. ")
     print("        Please regenerate your symbolic files (MBsysPad->Tools->Generate Symbolic Files). Exiting. ")
+    print("        Error raised in mbs_link.")
     s.flag_stop = 1
 
