@@ -182,14 +182,14 @@
         <pointname>Point_0</pointname>
         <coordinates>
           <x>0.5</x>
-          <y>-0.5</y>
+          <y>0.5</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
           <x2D>
             <position>
-              <x>1009.0</x>
-              <y>93.0</y>
+              <x>1000.0</x>
+              <y>281.0</y>
             </position>
           </x2D>
           <x3D />
@@ -198,15 +198,15 @@
       <point>
         <pointname>Point_1</pointname>
         <coordinates>
-          <x>0.5</x>
+          <x>-0.5</x>
           <y>0.5</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
           <x2D>
             <position>
-              <x>1009.0</x>
-              <y>300.0</y>
+              <x>650.0</x>
+              <y>301.0</y>
             </position>
           </x2D>
           <x3D />
@@ -216,14 +216,14 @@
         <pointname>Point_2</pointname>
         <coordinates>
           <x>-0.5</x>
-          <y>0.5</y>
+          <y>-0.5</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
           <x2D>
             <position>
               <x>651.0</x>
-              <y>300.0</y>
+              <y>112.0</y>
             </position>
           </x2D>
           <x3D />
@@ -232,15 +232,15 @@
       <point>
         <pointname>Point_3</pointname>
         <coordinates>
-          <x>-0.5</x>
+          <x>0.5</x>
           <y>-0.5</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
           <x2D>
             <position>
-              <x>648.0</x>
-              <y>88.0</y>
+              <x>998.0</x>
+              <y>102.0</y>
             </position>
           </x2D>
           <x3D />
@@ -289,20 +289,20 @@
       </graphics>
     </body>
     <body>
-      <bodyname>FrontWheelg</bodyname>
+      <bodyname>FrontWheelD</bodyname>
       <parent>
         <bodyname>Main_Body</bodyname>
         <pointname>Point_0</pointname>
       </parent>
       <joint>
         <jointname>Joint_8</jointname>
-        <type>R1</type>
+        <type>R2</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>1108.0</x>
-              <y>129.0</y>
+              <x>1101.0</x>
+              <y>301.0</y>
             </position>
           </x2D>
           <x3D>
@@ -318,8 +318,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>1164.0</x>
-              <y>105.0</y>
+              <x>1192.0</x>
+              <y>308.0</y>
             </position>
           </x2D>
           <x3D>
@@ -393,20 +393,20 @@
       </graphics>
     </body>
     <body>
-      <bodyname>FrontWheeld</bodyname>
+      <bodyname>BackWheelD</bodyname>
       <parent>
         <bodyname>Main_Body</bodyname>
         <pointname>Point_1</pointname>
       </parent>
       <joint>
         <jointname>Joint_9</jointname>
-        <type>R1</type>
+        <type>R2</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>1151.0</x>
-              <y>267.0</y>
+              <x>443.0</x>
+              <y>332.0</y>
             </position>
           </x2D>
           <x3D>
@@ -452,8 +452,8 @@
       <graphics>
         <x2D>
           <position>
-            <x>-1.0</x>
-            <y>-25.0</y>
+            <x>13.0</x>
+            <y>-18.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -466,8 +466,8 @@
           </size>
           <control_points>
             <control_point>
-              <x>43.0</x>
-              <y>-25.0</y>
+              <x>57.0</x>
+              <y>-18.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -480,20 +480,20 @@
       </graphics>
     </body>
     <body>
-      <bodyname>BackWheeld</bodyname>
+      <bodyname>BackWheelG</bodyname>
       <parent>
         <bodyname>Main_Body</bodyname>
         <pointname>Point_2</pointname>
       </parent>
       <joint>
         <jointname>Joint_6</jointname>
-        <type>R1</type>
+        <type>R2</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>575.0</x>
-              <y>301.0</y>
+              <x>530.0</x>
+              <y>87.0</y>
             </position>
           </x2D>
           <x3D>
@@ -567,20 +567,20 @@
       </graphics>
     </body>
     <body>
-      <bodyname>BackWheelg</bodyname>
+      <bodyname>FrontWheelG</bodyname>
       <parent>
         <bodyname>Main_Body</bodyname>
         <pointname>Point_3</pointname>
       </parent>
       <joint>
         <jointname>Joint_7</jointname>
-        <type>R1</type>
+        <type>R2</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>545.0</x>
-              <y>98.0</y>
+              <x>1132.0</x>
+              <y>72.0</y>
             </position>
           </x2D>
           <x3D>
@@ -596,8 +596,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>473.0</x>
-              <y>105.0</y>
+              <x>1225.0</x>
+              <y>100.0</y>
             </position>
           </x2D>
           <x3D>
@@ -643,8 +643,8 @@
       <graphics>
         <x2D>
           <position>
-            <x>-7.0</x>
-            <y>-26.0</y>
+            <x>3.0</x>
+            <y>-22.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -657,8 +657,8 @@
           </size>
           <control_points>
             <control_point>
-              <x>58.0</x>
-              <y>-26.0</y>
+              <x>68.0</x>
+              <y>-22.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>

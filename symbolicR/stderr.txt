@@ -1,6 +1,6 @@
 
 ##############################################################
-#	file7.gen 11/03/2025 12:07:37    errors
+#	file7.gen 14/03/2025 11:47:11    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -17,7 +17,7 @@ Unknown option/flag found in generation file : useXML
 	Elimination of the superfluous equations.....................
 
 
-		Maximum simultaneous symbolic expressions :  1397
+		Maximum simultaneous symbolic expressions :  1390
 
 		Maximum number of allocated Kbytes :  65
 
@@ -32,51 +32,61 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file1.gen 11/03/2025 12:07:37    errors
+#	file3.gen 14/03/2025 11:47:11    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
 Unknown option/flag found in generation file : useXML
 
 
-	Elimination of the superfluous equations.....................
+ Warning (error_data): useless process for this multibody model !
 
 
-		Maximum simultaneous symbolic expressions :  1692
 
-		Maximum number of allocated Kbytes :  79
+ Warning in the symbolic generator !
+
+
+
+		Maximum simultaneous symbolic expressions :  101
+
+		Maximum number of allocated Kbytes :  4
 
 
 	The symbolic equations have been generated 
 	in the directory: /usr/local/robotran/users/LEPL1504/upload/
 
 
- 		*** Generation symbolique reussie ! ***
+ 		*** Warning during symbolic generation ! ***
 
 
 
 
 ##############################################################
-#	file5.gen 11/03/2025 12:07:37    errors
+#	file4.gen 14/03/2025 11:47:11    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
 Unknown option/flag found in generation file : useXML
 
 
-	Elimination of the superfluous equations.....................
+ Warning (error_data): useless process for this multibody model !
 
 
-		Maximum simultaneous symbolic expressions :  2133
 
-		Maximum number of allocated Kbytes :  99
+ Warning in the symbolic generator !
+
+
+
+		Maximum simultaneous symbolic expressions :  101
+
+		Maximum number of allocated Kbytes :  4
 
 
 	The symbolic equations have been generated 
 	in the directory: /usr/local/robotran/users/LEPL1504/upload/
 
 
- 		*** Generation symbolique reussie ! ***
+ 		*** Warning during symbolic generation ! ***
 
 
 
