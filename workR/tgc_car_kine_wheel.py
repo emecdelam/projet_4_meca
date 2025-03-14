@@ -144,9 +144,10 @@ def tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data):
 	# vitesse du centre de la roue: Vws(1)
     
     if abs(Vws[0]) >= 1e-3:
+        print(Vws[0], -Vcts[0])
         gliss = -Vcts[0]/abs(Vws[0])   # Signe négatif pour compatibilité avec le modèle Bakker Pacejka
     else:
-        gliss = 0
+        gliss = -Vcts[0]/abs(Vws[0])
 		
     # Cohérence des dimensions des vecteurs et matrices (de dim 3 vers dim 4 pour le respect des indices)
     np.insert(Pcontact, 0, 0)

@@ -65,6 +65,8 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     import tgc_car_kine_wheel
     import tgc_bakker_contact
 
+    My = 2
+
     pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
 
     K = 2000
@@ -74,6 +76,7 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
         Fz = pen * K - D * VxF[3]
         Fz = Fz[0]
         Fx, Fy, Mz = tgc_bakker_contact.tgc_bakker_contact(Fz, anglis, ancamb, gliss, mbs_data)
+
     # Example : Contact force with a wall when X coordinate is higher than 1m.
     #           The force is perfectly horizontal (inertial frame)
     # xlim = 1.0 # m
