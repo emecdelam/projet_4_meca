@@ -51,17 +51,26 @@ class Level:
     WARNING: str = 'WARNING'
     ERROR: str = 'ERROR'
     CRITICAL: str = 'CRITICAL'
+    SUCCESS: str = 'SUCCESS'
 
+def log(message_content: str, level: str, text_color: Optional[str] = "") -> None:
 
-def log(message_content: str,level: str,text_color: Optional[Colors] = "") -> None:
-    if level == Level.CRITICAL:
-        text_color += Colors.black + Colors.bg.orange
-    elif level == Level.ERROR:
-        text_color += Colors.black + Colors.bg.red
-    elif level == Level.WARNING:
-        text_color = Colors.yellow
-    if text_color != "":
-        print(
-            f'{text_color}[{str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")).ljust(19)}] [{str(level).ljust(8)}] {message_content}{Colors.reset}')
+    match level:
+        case Level.CRITICAL:
+            text_color += Colors.black + Colors.bg.orange
+        case Level.ERROR:
+            text_color += Colors.black + Colors.bg.red
+        case Level.WARNING:
+            text_color = Colors.yellow
+        case Level.SUCCESS:
+            text_color += Colors.green
+        case Level.INFO:
+            text_color += Colors.blue
+        case _:
+            pass
+
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if text_color:
+        print(f'{text_color}[{timestamp.ljust(19)}] [{str(level).ljust(8)}] {message_content}{Colors.reset}')
     else:
-        print(f'[{str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")).ljust(19)}] [{str(level).ljust(8)}] {message_content}{Colors.reset}')
+        print(f'[{timestamp.ljust(19)}] [{str(level).ljust(8)}] {message_content}{Colors.reset}')

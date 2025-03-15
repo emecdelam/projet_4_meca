@@ -59,18 +59,28 @@ try:
     import matplotlib.pyplot as plt
 except Exception:
     raise RuntimeError('Unable to load matplotlib, plotting results unavailable.')
+import sys
+import numpy as np
 
+
+data = str(sys.argv[1])
+xlabel = sys.argv[2]
+ylabel = sys.argv[3]
+plt_name = sys.argv[4]
 # Figure creation
-fig = plt.figure(num='Example of plot')
+fig = plt.figure(num=plt_name)
 axis = fig.gca()
+exec(data)
 
-# Plotting data's
-axis.plot(results.q[:, 0], results.q[:, 1], label='q[1]')
+
+
 
 # Figure enhancement
 axis.grid(True)
 axis.set_xlim(left=mbs_dirdyn.get_options('t0'), right=mbs_dirdyn.get_options('tf'))
-axis.set_xlabel('Time (s)')
-axis.set_ylabel('Coordinate value (m or rad)')
-
-plt.show()
+if len(sys.argv) > 5:
+    axis.set_ylim(float(sys.argv[5]))
+axis.set_xlabel(xlabel)
+axis.set_ylabel(ylabel)
+axis.legend()
+plt.savefig(plt_name)
