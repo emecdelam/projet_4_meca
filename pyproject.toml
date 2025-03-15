@@ -1,0 +1,12 @@
+[project]
+name = "livrable-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "lxml>=5.3.1",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+]
