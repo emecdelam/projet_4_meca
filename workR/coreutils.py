@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Simple program containing usefull functions
+"""
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
