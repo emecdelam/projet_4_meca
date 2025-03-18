@@ -1,2 +1,2 @@
-cd workR
-python3 brain.py
+cd workR/
+python3 main.py

@@ -34,4 +34,4 @@ def user_JointForces(mbs_data, tsim):
     # D = 0.5 # N/(m/s)
     # mbs_data.Qq[5] = -D * mbs_data.qd[5]
 
-    return 
+    return

@@ -69,11 +69,8 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
 
     pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
 
-    import json
-    with open('constants.json', 'r') as file:
-        dic = json.load(file)
-    K = dic['Kext']
-    D = dic['Dext']
+    K = 2000
+    D = 150
 
     if pen > 0:
         Fz = pen * K - D * VxF[3]
