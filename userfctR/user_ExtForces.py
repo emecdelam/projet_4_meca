@@ -65,8 +65,6 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     import tgc_car_kine_wheel
     import tgc_bakker_contact
 
-    My = 2
-
     pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
 
     K = 2000

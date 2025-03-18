@@ -28,6 +28,10 @@ def user_JointForces(mbs_data, tsim):
     """
     # cleaning previous forces value
     mbs_data.Qq[1:] = 0.
+    wheel_drive_joints = [7, 9, 10, 11]
+
+    for joint_id in wheel_drive_joints:
+        mbs_data.Qq[joint_id] = 2
 
 
     # Example: damping in joint number 5
