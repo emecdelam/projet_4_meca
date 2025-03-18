@@ -2,6 +2,7 @@
 """Module for defining user function required to compute external forces."""
 # Author: Robotran Team
 # (c) Universite catholique de Louvain, 2019
+import numpy as np
 
 
 def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
@@ -71,9 +72,11 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     D = 150
 
     if pen > 0:
-        Fz = pen * K - D * VxF[3]
-        Fz = Fz[0]
-        Fx, Fy, Mz = tgc_bakker_contact.tgc_bakker_contact(Fz, anglis, ancamb, gliss, mbs_data)
+        FzR = pen * K - D * VxF[3]
+        FzR = FzR[0]
+        FxR, FyR, MzR = tgc_bakker_contact.tgc_bakker_contact(FzR, anglis, ancamb, gliss, mbs_data)
+        _, Fx, Fy, Fz = np.dot(np.transpose(Rsol), [0, FxR, FyR, FzR])
+        Mz = np.dot(np.transpose(Rsol), [0, 0,0,MzR])[3]
 
     # Example : Contact force with a wall when X coordinate is higher than 1m.
     #           The force is perfectly horizontal (inertial frame)
