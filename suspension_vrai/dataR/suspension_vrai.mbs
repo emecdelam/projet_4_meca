@@ -15,13 +15,13 @@
     <graphics>
       <x2D>
         <position>
-          <x>759.0</x>
-          <y>642.0</y>
+          <x>761.0</x>
+          <y>804.0</y>
         </position>
         <base_body>
           <position>
-            <x>-321.0</x>
-            <y>-35.0</y>
+            <x>-337.0</x>
+            <y>-39.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -34,20 +34,20 @@
           </size>
           <control_points>
             <control_point>
-              <x>349.0</x>
-              <y>-35.0</y>
+              <x>333.0</x>
+              <y>-39.0</y>
             </control_point>
             <control_point>
-              <x>349.0</x>
-              <y>41.0</y>
+              <x>333.0</x>
+              <y>37.0</y>
             </control_point>
             <control_point>
-              <x>-321.0</x>
-              <y>41.0</y>
+              <x>-337.0</x>
+              <y>37.0</y>
             </control_point>
             <control_point>
-              <x>-321.0</x>
-              <y>-35.0</y>
+              <x>-337.0</x>
+              <y>-39.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -103,8 +103,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>676.0</x>
-              <y>624.0</y>
+              <x>657.0</x>
+              <y>808.0</y>
             </position>
           </x2D>
           <x3D>
@@ -120,8 +120,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>854.0</x>
-              <y>613.0</y>
+              <x>965.0</x>
+              <y>794.0</y>
             </position>
           </x2D>
           <x3D>
@@ -140,8 +140,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>682.0</x>
-              <y>596.0</y>
+              <x>585.0</x>
+              <y>798.0</y>
             </position>
           </x2D>
           <x3D>
@@ -152,13 +152,13 @@
       </joint>
       <joint>
         <jointname>Joint_3</jointname>
-        <type>R1</type>
+        <type>R3</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
-              <x>855.0</x>
-              <y>582.0</y>
+              <x>834.0</x>
+              <y>618.0</y>
             </position>
           </x2D>
           <x3D>
@@ -186,7 +186,7 @@
       </joint>
       <joint>
         <jointname>Joint_5</jointname>
-        <type>R3</type>
+        <type>R1</type>
         <nature>independent</nature>
         <graphics>
           <x2D>
@@ -626,8 +626,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>1252.0</x>
-              <y>105.0</y>
+              <x>1262.0</x>
+              <y>176.0</y>
             </position>
           </x2D>
           <x3D />
@@ -696,8 +696,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>1299.0</x>
-              <y>134.0</y>
+              <x>1363.0</x>
+              <y>172.0</y>
             </position>
           </x2D>
           <x3D>
@@ -788,8 +788,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>630.0</x>
-              <y>107.0</y>
+              <x>632.0</x>
+              <y>127.0</y>
             </position>
           </x2D>
           <x3D>
@@ -808,8 +808,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>511.0</x>
-              <y>103.0</y>
+              <x>512.0</x>
+              <y>120.0</y>
             </position>
           </x2D>
           <x3D />
@@ -818,8 +818,8 @@
       <graphics>
         <x2D>
           <position>
-            <x>-131.0</x>
-            <y>-21.0</y>
+            <x>-132.0</x>
+            <y>-24.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -832,20 +832,20 @@
           </size>
           <control_points>
             <control_point>
-              <x>11.0</x>
-              <y>-21.0</y>
+              <x>10.0</x>
+              <y>-24.0</y>
             </control_point>
             <control_point>
-              <x>11.0</x>
-              <y>12.0</y>
+              <x>10.0</x>
+              <y>9.0</y>
             </control_point>
             <control_point>
-              <x>-131.0</x>
-              <y>12.0</y>
+              <x>-132.0</x>
+              <y>9.0</y>
             </control_point>
             <control_point>
-              <x>-131.0</x>
-              <y>-21.0</y>
+              <x>-132.0</x>
+              <y>-24.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -870,8 +870,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>632.0</x>
-              <y>137.0</y>
+              <x>633.0</x>
+              <y>213.0</y>
             </position>
           </x2D>
           <x3D>
@@ -890,8 +890,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>515.0</x>
-              <y>141.0</y>
+              <x>516.0</x>
+              <y>217.0</y>
             </position>
           </x2D>
           <x3D />
@@ -907,8 +907,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>569.0</x>
-              <y>128.0</y>
+              <x>570.0</x>
+              <y>204.0</y>
             </position>
           </x2D>
           <x3D />
@@ -969,8 +969,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>452.0</x>
-              <y>143.0</y>
+              <x>414.0</x>
+              <y>215.0</y>
             </position>
           </x2D>
           <x3D>
@@ -989,8 +989,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>452.0</x>
-              <y>23.0</y>
+              <x>414.0</x>
+              <y>95.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1006,8 +1006,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>373.0</x>
-              <y>59.0</y>
+              <x>344.0</x>
+              <y>155.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1068,8 +1068,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>331.0</x>
-              <y>60.0</y>
+              <x>263.0</x>
+              <y>168.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1081,8 +1081,8 @@
       <graphics>
         <x2D>
           <position>
-            <x>-39.0</x>
-            <y>-90.0</y>
+            <x>-30.0</x>
+            <y>-119.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -1095,20 +1095,20 @@
           </size>
           <control_points>
             <control_point>
-              <x>18.0</x>
-              <y>-90.0</y>
+              <x>27.0</x>
+              <y>-119.0</y>
             </control_point>
             <control_point>
-              <x>18.0</x>
-              <y>137.0</y>
+              <x>27.0</x>
+              <y>108.0</y>
             </control_point>
             <control_point>
-              <x>-39.0</x>
-              <y>137.0</y>
+              <x>-30.0</x>
+              <y>108.0</y>
             </control_point>
             <control_point>
-              <x>-39.0</x>
-              <y>-90.0</y>
+              <x>-30.0</x>
+              <y>-119.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -1167,6 +1167,22 @@
       <endpoint2>
         <bodyname>Body_1</bodyname>
         <pointname>Point_1</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
+    <link>
+      <name>Link_1</name>
+      <endpoint1>
+        <bodyname>Body_4</bodyname>
+        <pointname>origin</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_3</pointname>
       </endpoint2>
       <graphics>
         <x3D>
