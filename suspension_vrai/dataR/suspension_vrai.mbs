@@ -91,7 +91,7 @@
   <bodytree>
     <!--this is the body tree-->
     <body>
-      <bodyname>Body_7</bodyname>
+      <bodyname>Main_body</bodyname>
       <parent>
         <bodyname>base</bodyname>
         <pointname>origin</pointname>
@@ -184,54 +184,6 @@
           </x3D>
         </graphics>
       </joint>
-      <graphics>
-        <x2D>
-          <position>
-            <x>-335.0</x>
-            <y>-546.0</y>
-          </position>
-          <name_pos>
-            <x>0.0</x>
-            <y>0.0</y>
-          </name_pos>
-          <shape>rectangle</shape>
-          <size>
-            <x>38.0</x>
-            <y>148.0</y>
-          </size>
-          <control_points>
-            <control_point>
-              <x>-297.0</x>
-              <y>-546.0</y>
-            </control_point>
-            <control_point>
-              <x>-297.0</x>
-              <y>-398.0</y>
-            </control_point>
-            <control_point>
-              <x>-335.0</x>
-              <y>-398.0</y>
-            </control_point>
-            <control_point>
-              <x>-335.0</x>
-              <y>-546.0</y>
-            </control_point>
-          </control_points>
-          <angle>0.0</angle>
-        </x2D>
-        <x3D>
-          <x3D_com />
-          <x3D_points />
-          <x3D_lines />
-        </x3D>
-      </graphics>
-    </body>
-    <body>
-      <bodyname>Main_body</bodyname>
-      <parent>
-        <bodyname>Body_7</bodyname>
-        <pointname>origin</pointname>
-      </parent>
       <joint>
         <jointname>Joint_5</jointname>
         <type>R3</type>
@@ -714,7 +666,7 @@
       </parent>
       <joint>
         <jointname>Joint_9</jointname>
-        <type>R2</type>
+        <type>R1</type>
         <nature>driven</nature>
         <initialvalue>
           <q>-0.24</q>
@@ -1075,6 +1027,71 @@
             <control_point>
               <x>-28.0</x>
               <y>-132.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Body_7</bodyname>
+      <parent>
+        <bodyname>Body_6</bodyname>
+        <pointname>Point_1</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_13</jointname>
+        <type>R1</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>331.0</x>
+              <y>60.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-39.0</x>
+            <y>-90.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>57.0</x>
+            <y>227.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>18.0</x>
+              <y>-90.0</y>
+            </control_point>
+            <control_point>
+              <x>18.0</x>
+              <y>137.0</y>
+            </control_point>
+            <control_point>
+              <x>-39.0</x>
+              <y>137.0</y>
+            </control_point>
+            <control_point>
+              <x>-39.0</x>
+              <y>-90.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
