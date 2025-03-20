@@ -469,7 +469,7 @@
       <joint>
         <jointname>Joint_6</jointname>
         <type>R1</type>
-        <nature>independent</nature>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
@@ -552,7 +552,7 @@
       <joint>
         <jointname>Joint_7</jointname>
         <type>R1</type>
-        <nature>independent</nature>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
@@ -872,12 +872,12 @@
       <joint>
         <jointname>Joint_11</jointname>
         <type>R1</type>
-        <nature>independent</nature>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
               <x>630.0</x>
-              <y>122.0</y>
+              <y>123.0</y>
             </position>
           </x2D>
           <x3D>
@@ -897,7 +897,7 @@
           <x2D>
             <position>
               <x>510.0</x>
-              <y>115.0</y>
+              <y>116.0</y>
             </position>
           </x2D>
           <x3D />
@@ -954,7 +954,7 @@
       <joint>
         <jointname>Joint_10</jointname>
         <type>R1</type>
-        <nature>independent</nature>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
@@ -995,8 +995,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>569.0</x>
-              <y>257.0</y>
+              <x>564.0</x>
+              <y>252.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1805,7 +1805,7 @@
       <joint>
         <jointname>Joint_27</jointname>
         <type>R3</type>
-        <nature>independent</nature>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
@@ -1904,7 +1904,7 @@
       <joint>
         <jointname>Joint_25</jointname>
         <type>R3</type>
-        <nature>independent</nature>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
@@ -1925,8 +1925,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>761.0</x>
-              <y>539.0</y>
+              <x>762.0</x>
+              <y>520.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1945,8 +1945,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>762.0</x>
-              <y>486.0</y>
+              <x>763.0</x>
+              <y>467.0</y>
             </position>
           </x2D>
           <x3D />
@@ -2111,23 +2111,6 @@
         </x3D>
       </graphics>
     </ball>
-    <rod>
-      <name>Cut_2</name>
-      <endpoint1>
-        <bodyname>fusee_avant_gauche</bodyname>
-        <pointname>Point_2</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>fusee_avant_droite</bodyname>
-        <pointname>Point_2</pointname>
-      </endpoint2>
-      <length>1.0</length>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </rod>
     <ball>
       <name>Cut_3</name>
       <endpoint1>
@@ -2192,6 +2175,23 @@
         </x3D>
       </graphics>
     </ball>
+    <rod>
+      <name>Cut_2</name>
+      <endpoint1>
+        <bodyname>fusee_avant_gauche</bodyname>
+        <pointname>Point_2</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>fusee_avant_droite</bodyname>
+        <pointname>Point_2</pointname>
+      </endpoint2>
+      <length>1.0</length>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </rod>
   </cuts>
   <links>
     <!--this is the link list-->
