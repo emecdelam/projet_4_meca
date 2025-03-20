@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Sun Mar 16 15:08:23 2025
+#	==> Generation Date: Thu Mar 20 14:58:16 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: suspension_vrai
 #
-#	==> Number of joints: 10
+#	==> Number of joints: 12
 #
 #	==> Function: F7 - Link Forces (1D)
 #
@@ -40,18 +40,20 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
  
 # Link anchor points Kinematics
 
-    RLlnk2_12 = s.dpt[1,6]*C8+s.dpt[3,6]*S8
-    RLlnk2_32 = -s.dpt[1,6]*S8+s.dpt[3,6]*C8
-    POlnk2_12 = RLlnk2_12+s.dpt[1,3]
-    ORlnk2_12 = qd[8]*RLlnk2_32
-    ORlnk2_32 = -qd[8]*RLlnk2_12
-    Plnk11 = POlnk2_12-s.dpt[1,1]
+    RLlnk2_22 = s.dpt[2,9]*C8-s.dpt[3,9]*S8
+    RLlnk2_32 = s.dpt[2,9]*S8+s.dpt[3,9]*C8
+    POlnk2_22 = RLlnk2_22+s.dpt[2,3]
+    ORlnk2_22 = -qd[8]*RLlnk2_32
+    ORlnk2_32 = qd[8]*RLlnk2_22
+    Plnk11 = -s.dpt[1,1]+s.dpt[1,3]
+    Plnk21 = POlnk2_22-s.dpt[2,1]
     Plnk31 = RLlnk2_32-s.dpt[3,1]
-    PPlnk1 = Plnk11*Plnk11+Plnk31*Plnk31
+    PPlnk1 = Plnk11*Plnk11+Plnk21*Plnk21+Plnk31*Plnk31
     Z1 = sqrt(PPlnk1)
     e11 = Plnk11/Z1
+    e21 = Plnk21/Z1
     e31 = Plnk31/Z1
-    Zd1 = ORlnk2_12*e11+ORlnk2_32*e31
+    Zd1 = ORlnk2_22*e21+ORlnk2_32*e31
 
 # Link Forces 
 
@@ -60,20 +62,32 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
 # Link Dynamics: forces projection on body-fixed frames
 
     fPlnk11 = Flink1*e11
+    fPlnk21 = Flink1*e21
     fPlnk31 = Flink1*e31
+    trqlnk6_1_1 = -fPlnk21*s.dpt[3,1]+fPlnk31*s.dpt[2,1]
     trqlnk6_1_2 = fPlnk11*s.dpt[3,1]-fPlnk31*s.dpt[1,1]
-    fSlnk11 = Flink1*(e11*C8-e31*S8)
-    fSlnk31 = Flink1*(e11*S8+e31*C8)
-    trqlnk8_1_2 = -fSlnk11*s.dpt[3,6]+fSlnk31*s.dpt[1,6]
+    trqlnk6_1_3 = -fPlnk11*s.dpt[2,1]+fPlnk21*s.dpt[1,1]
+    fSlnk11 = Flink1*e11
+    fSlnk21 = Flink1*(e21*C8+e31*S8)
+    fSlnk31 = Flink1*(-e21*S8+e31*C8)
+    trqlnk8_1_1 = fSlnk21*s.dpt[3,9]-fSlnk31*s.dpt[2,9]
+    trqlnk8_1_2 = -fSlnk11*s.dpt[3,9]
+    trqlnk8_1_3 = fSlnk11*s.dpt[2,9]
  
 # Symbolic model output
 
     frc[1,6] = s.frc[1,6]+fPlnk11
+    frc[2,6] = s.frc[2,6]+fPlnk21
     frc[3,6] = s.frc[3,6]+fPlnk31
+    trq[1,6] = s.trq[1,6]+trqlnk6_1_1
     trq[2,6] = s.trq[2,6]+trqlnk6_1_2
+    trq[3,6] = s.trq[3,6]+trqlnk6_1_3
     frc[1,8] = s.frc[1,8]-fSlnk11
+    frc[2,8] = s.frc[2,8]-fSlnk21
     frc[3,8] = s.frc[3,8]-fSlnk31
+    trq[1,8] = s.trq[1,8]+trqlnk8_1_1
     trq[2,8] = s.trq[2,8]+trqlnk8_1_2
+    trq[3,8] = s.trq[3,8]+trqlnk8_1_3
  
 # Symbolic model output
 
