@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Thu Mar 20 14:58:16 2025
+#	==> Generation Date: Thu Mar 20 15:02:22 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: suspension_vrai
 #
-#	==> Number of joints: 12
+#	==> Number of joints: 13
 #
 #	==> Function: F18 - Constraints Quadratic Velocity Terms (Jdqd)
 #
@@ -38,6 +38,12 @@ def cons_jdqd(Jdqd, s):
     C8 = cos(q[8])
     S9 = sin(q[9])
     C9 = cos(q[9])
+    S12 = sin(q[12])
+    C12 = cos(q[12])
+    S13 = sin(q[13])
+    C13 = cos(q[13])
+    S11 = sin(q[11])
+    C11 = cos(q[11])
  
 # Augmented Joint Position Vectors
 
@@ -76,9 +82,41 @@ def cons_jdqd(Jdqd, s):
     Apqpjdqd2_33 = Apqpjdqd2_32-OMjdqd2_22*ORjdqd2_13+ORjdqd2_23*qd[8]-Ompqpjdqd2_22*RLjdqd2_13
     jdqd2 = Apqpjdqd1_22-Apqpjdqd2_23
     jdqd3 = Apqpjdqd1_32-Apqpjdqd2_33
+    ROjdqd3_82 = -S12*C13
+    ROjdqd3_92 = C12*C13
+    RLjdqd3_22 = s.dpt[2,13]*C12
+    RLjdqd3_32 = s.dpt[2,13]*S12
+    OMjdqd3_22 = qd[13]*C12
+    OMjdqd3_32 = qd[13]*S12
+    ORjdqd3_22 = -RLjdqd3_32*qd[12]
+    ORjdqd3_32 = RLjdqd3_22*qd[12]
+    Ompqpjdqd3_22 = -qd[12]*qd[13]*S12
+    Ompqpjdqd3_32 = qd[12]*qd[13]*C12
+    Apqpjdqd3_22 = -ORjdqd3_32*qd[12]
+    Apqpjdqd3_32 = ORjdqd3_22*qd[12]
+    RLjdqd3_13 = s.dpt[3,15]*S13
+    RLjdqd3_23 = ROjdqd3_82*s.dpt[3,15]
+    RLjdqd3_33 = ROjdqd3_92*s.dpt[3,15]
+    ORjdqd3_13 = OMjdqd3_22*RLjdqd3_33-OMjdqd3_32*RLjdqd3_23
+    ORjdqd3_23 = OMjdqd3_32*RLjdqd3_13-RLjdqd3_33*qd[12]
+    ORjdqd3_33 = -OMjdqd3_22*RLjdqd3_13+RLjdqd3_23*qd[12]
+    Apqpjdqd3_13 = OMjdqd3_22*ORjdqd3_33-OMjdqd3_32*ORjdqd3_23+Ompqpjdqd3_22*RLjdqd3_33-Ompqpjdqd3_32*RLjdqd3_23
+    Apqpjdqd3_23 = Apqpjdqd3_22+OMjdqd3_32*ORjdqd3_13-ORjdqd3_33*qd[12]+Ompqpjdqd3_32*RLjdqd3_13
+    Apqpjdqd3_33 = Apqpjdqd3_32-OMjdqd3_22*ORjdqd3_13+ORjdqd3_23*qd[12]-Ompqpjdqd3_22*RLjdqd3_13
+    RLjdqd4_22 = s.dpt[2,12]*C11
+    RLjdqd4_32 = s.dpt[2,12]*S11
+    ORjdqd4_22 = -RLjdqd4_32*qd[11]
+    ORjdqd4_32 = RLjdqd4_22*qd[11]
+    Apqpjdqd4_22 = -ORjdqd4_32*qd[11]
+    Apqpjdqd4_32 = ORjdqd4_22*qd[11]
+    jdqd5 = Apqpjdqd3_23-Apqpjdqd4_22
+    jdqd6 = Apqpjdqd3_33-Apqpjdqd4_32
     Jdqd[1] = -Apqpjdqd2_13
     Jdqd[2] = jdqd2
     Jdqd[3] = jdqd3
+    Jdqd[4] = Apqpjdqd3_13
+    Jdqd[5] = jdqd5
+    Jdqd[6] = jdqd6
 
 # Number of continuation lines = 0
 

@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Thu Mar 20 14:58:16 2025
+#	==> Generation Date: Thu Mar 20 15:02:22 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: suspension_vrai
 #
-#	==> Number of joints: 12
+#	==> Number of joints: 13
 #
 #	==> Function: F19 - External Forces
 #

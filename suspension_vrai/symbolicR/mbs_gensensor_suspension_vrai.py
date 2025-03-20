@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Thu Mar 20 14:58:16 2025
+#	==> Generation Date: Thu Mar 20 15:02:22 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: suspension_vrai
 #
-#	==> Number of joints: 12
+#	==> Number of joints: 13
 #
 #	==> Function: F6 - Sensors Kinematics
 #
@@ -53,6 +53,8 @@ def sensor(sens, s, isens):
   C11 = cos(q[11])
   S12 = sin(q[12])
   C12 = cos(q[12])
+  S13 = sin(q[13])
+  C13 = cos(q[13])
  
 # Augmented Joint Position Vectors
 
@@ -986,6 +988,150 @@ def sensor(sens, s, isens):
     sens.OMP[1] = OPcp12_17
     sens.OMP[2] = OPcp12_27
     sens.OMP[3] = OPcp12_37
+
+  if (isens == 13): 
+
+    ROcp13_25 = S4*S5
+    ROcp13_35 = -C4*S5
+    ROcp13_85 = -S4*C5
+    ROcp13_95 = C4*C5
+    ROcp13_16 = C5*C6
+    ROcp13_26 = ROcp13_25*C6+C4*S6
+    ROcp13_36 = ROcp13_35*C6+S4*S6
+    ROcp13_46 = -C5*S6
+    ROcp13_56 = -ROcp13_25*S6+C4*C6
+    ROcp13_66 = -ROcp13_35*S6+S4*C6
+    ROcp13_412 = ROcp13_46*C12+S12*S5
+    ROcp13_512 = ROcp13_56*C12+ROcp13_85*S12
+    ROcp13_612 = ROcp13_66*C12+ROcp13_95*S12
+    ROcp13_712 = -ROcp13_46*S12+C12*S5
+    ROcp13_812 = -ROcp13_56*S12+ROcp13_85*C12
+    ROcp13_912 = -ROcp13_66*S12+ROcp13_95*C12
+    ROcp13_113 = ROcp13_16*C13-ROcp13_712*S13
+    ROcp13_213 = ROcp13_26*C13-ROcp13_812*S13
+    ROcp13_313 = ROcp13_36*C13-ROcp13_912*S13
+    ROcp13_713 = ROcp13_16*S13+ROcp13_712*C13
+    ROcp13_813 = ROcp13_26*S13+ROcp13_812*C13
+    ROcp13_913 = ROcp13_36*S13+ROcp13_912*C13
+    OMcp13_25 = qd[5]*C4
+    OMcp13_35 = qd[5]*S4
+    OPcp13_25 = qdd[5]*C4-qd[4]*qd[5]*S4
+    OPcp13_35 = qdd[5]*S4+qd[4]*qd[5]*C4
+    OMcp13_16 = qd[4]+qd[6]*S5
+    OMcp13_26 = OMcp13_25+ROcp13_85*qd[6]
+    OMcp13_36 = OMcp13_35+ROcp13_95*qd[6]
+    OPcp13_16 = qdd[4]+qdd[6]*S5+qd[6]*(OMcp13_25*ROcp13_95-OMcp13_35*ROcp13_85)
+    OPcp13_26 = OPcp13_25+ROcp13_85*qdd[6]+qd[6]*(OMcp13_35*S5-ROcp13_95*qd[4])
+    OPcp13_36 = OPcp13_35+ROcp13_95*qdd[6]+qd[6]*(-OMcp13_25*S5+ROcp13_85*qd[4])
+    RLcp13_17 = ROcp13_16*s.dpt[1,6]+ROcp13_46*s.dpt[2,6]
+    RLcp13_27 = ROcp13_26*s.dpt[1,6]+ROcp13_56*s.dpt[2,6]
+    RLcp13_37 = ROcp13_36*s.dpt[1,6]+ROcp13_66*s.dpt[2,6]
+    POcp13_17 = RLcp13_17+q[1]
+    POcp13_27 = RLcp13_27+q[2]
+    POcp13_37 = RLcp13_37+q[3]
+    JTcp13_17_5 = -RLcp13_27*S4+RLcp13_37*C4
+    JTcp13_27_5 = RLcp13_17*S4
+    JTcp13_37_5 = -RLcp13_17*C4
+    JTcp13_17_6 = -RLcp13_27*ROcp13_95+RLcp13_37*ROcp13_85
+    JTcp13_27_6 = RLcp13_17*ROcp13_95-RLcp13_37*S5
+    JTcp13_37_6 = -RLcp13_17*ROcp13_85+RLcp13_27*S5
+    OMcp13_17 = OMcp13_16+ROcp13_16*qd[12]
+    OMcp13_27 = OMcp13_26+ROcp13_26*qd[12]
+    OMcp13_37 = OMcp13_36+ROcp13_36*qd[12]
+    ORcp13_17 = OMcp13_26*RLcp13_37-OMcp13_36*RLcp13_27
+    ORcp13_27 = -OMcp13_16*RLcp13_37+OMcp13_36*RLcp13_17
+    ORcp13_37 = OMcp13_16*RLcp13_27-OMcp13_26*RLcp13_17
+    VIcp13_17 = ORcp13_17+qd[1]
+    VIcp13_27 = ORcp13_27+qd[2]
+    VIcp13_37 = ORcp13_37+qd[3]
+    OPcp13_17 = OPcp13_16+ROcp13_16*qdd[12]+qd[12]*(OMcp13_26*ROcp13_36-OMcp13_36*ROcp13_26)
+    OPcp13_27 = OPcp13_26+ROcp13_26*qdd[12]+qd[12]*(-OMcp13_16*ROcp13_36+OMcp13_36*ROcp13_16)
+    OPcp13_37 = OPcp13_36+ROcp13_36*qdd[12]+qd[12]*(OMcp13_16*ROcp13_26-OMcp13_26*ROcp13_16)
+    ACcp13_17 = qdd[1]+OMcp13_26*ORcp13_37-OMcp13_36*ORcp13_27+OPcp13_26*RLcp13_37-OPcp13_36*RLcp13_27
+    ACcp13_27 = qdd[2]-OMcp13_16*ORcp13_37+OMcp13_36*ORcp13_17-OPcp13_16*RLcp13_37+OPcp13_36*RLcp13_17
+    ACcp13_37 = qdd[3]+OMcp13_16*ORcp13_27-OMcp13_26*ORcp13_17+OPcp13_16*RLcp13_27-OPcp13_26*RLcp13_17
+    RLcp13_18 = ROcp13_412*s.dpt[2,13]
+    RLcp13_28 = ROcp13_512*s.dpt[2,13]
+    RLcp13_38 = ROcp13_612*s.dpt[2,13]
+    POcp13_18 = POcp13_17+RLcp13_18
+    POcp13_28 = POcp13_27+RLcp13_28
+    POcp13_38 = POcp13_37+RLcp13_38
+    JTcp13_28_4 = -RLcp13_37-RLcp13_38
+    JTcp13_38_4 = RLcp13_27+RLcp13_28
+    JTcp13_18_5 = JTcp13_17_5-RLcp13_28*S4+RLcp13_38*C4
+    JTcp13_28_5 = JTcp13_27_5+RLcp13_18*S4
+    JTcp13_38_5 = JTcp13_37_5-RLcp13_18*C4
+    JTcp13_18_6 = JTcp13_17_6-RLcp13_28*ROcp13_95+RLcp13_38*ROcp13_85
+    JTcp13_28_6 = JTcp13_27_6+RLcp13_18*ROcp13_95-RLcp13_38*S5
+    JTcp13_38_6 = JTcp13_37_6-RLcp13_18*ROcp13_85+RLcp13_28*S5
+    JTcp13_18_7 = -RLcp13_28*ROcp13_36+RLcp13_38*ROcp13_26
+    JTcp13_28_7 = RLcp13_18*ROcp13_36-RLcp13_38*ROcp13_16
+    JTcp13_38_7 = -RLcp13_18*ROcp13_26+RLcp13_28*ROcp13_16
+    OMcp13_18 = OMcp13_17+ROcp13_412*qd[13]
+    OMcp13_28 = OMcp13_27+ROcp13_512*qd[13]
+    OMcp13_38 = OMcp13_37+ROcp13_612*qd[13]
+    ORcp13_18 = OMcp13_27*RLcp13_38-OMcp13_37*RLcp13_28
+    ORcp13_28 = -OMcp13_17*RLcp13_38+OMcp13_37*RLcp13_18
+    ORcp13_38 = OMcp13_17*RLcp13_28-OMcp13_27*RLcp13_18
+    VIcp13_18 = ORcp13_18+VIcp13_17
+    VIcp13_28 = ORcp13_28+VIcp13_27
+    VIcp13_38 = ORcp13_38+VIcp13_37
+    OPcp13_18 = OPcp13_17+ROcp13_412*qdd[13]+qd[13]*(OMcp13_27*ROcp13_612-OMcp13_37*ROcp13_512)
+    OPcp13_28 = OPcp13_27+ROcp13_512*qdd[13]+qd[13]*(-OMcp13_17*ROcp13_612+OMcp13_37*ROcp13_412)
+    OPcp13_38 = OPcp13_37+ROcp13_612*qdd[13]+qd[13]*(OMcp13_17*ROcp13_512-OMcp13_27*ROcp13_412)
+    ACcp13_18 = ACcp13_17+OMcp13_27*ORcp13_38-OMcp13_37*ORcp13_28+OPcp13_27*RLcp13_38-OPcp13_37*RLcp13_28
+    ACcp13_28 = ACcp13_27-OMcp13_17*ORcp13_38+OMcp13_37*ORcp13_18-OPcp13_17*RLcp13_38+OPcp13_37*RLcp13_18
+    ACcp13_38 = ACcp13_37+OMcp13_17*ORcp13_28-OMcp13_27*ORcp13_18+OPcp13_17*RLcp13_28-OPcp13_27*RLcp13_18
+    sens.P[1] = POcp13_18
+    sens.P[2] = POcp13_28
+    sens.P[3] = POcp13_38
+    sens.R[1,1] = ROcp13_113
+    sens.R[1,2] = ROcp13_213
+    sens.R[1,3] = ROcp13_313
+    sens.R[2,1] = ROcp13_412
+    sens.R[2,2] = ROcp13_512
+    sens.R[2,3] = ROcp13_612
+    sens.R[3,1] = ROcp13_713
+    sens.R[3,2] = ROcp13_813
+    sens.R[3,3] = ROcp13_913
+    sens.V[1] = VIcp13_18
+    sens.V[2] = VIcp13_28
+    sens.V[3] = VIcp13_38
+    sens.OM[1] = OMcp13_18
+    sens.OM[2] = OMcp13_28
+    sens.OM[3] = OMcp13_38
+    sens.J[1,1] = (1.0)
+    sens.J[1,5] = JTcp13_18_5
+    sens.J[1,6] = JTcp13_18_6
+    sens.J[1,12] = JTcp13_18_7
+    sens.J[2,2] = (1.0)
+    sens.J[2,4] = JTcp13_28_4
+    sens.J[2,5] = JTcp13_28_5
+    sens.J[2,6] = JTcp13_28_6
+    sens.J[2,12] = JTcp13_28_7
+    sens.J[3,3] = (1.0)
+    sens.J[3,4] = JTcp13_38_4
+    sens.J[3,5] = JTcp13_38_5
+    sens.J[3,6] = JTcp13_38_6
+    sens.J[3,12] = JTcp13_38_7
+    sens.J[4,4] = (1.0)
+    sens.J[4,6] = S5
+    sens.J[4,12] = ROcp13_16
+    sens.J[4,13] = ROcp13_412
+    sens.J[5,5] = C4
+    sens.J[5,6] = ROcp13_85
+    sens.J[5,12] = ROcp13_26
+    sens.J[5,13] = ROcp13_512
+    sens.J[6,5] = S4
+    sens.J[6,6] = ROcp13_95
+    sens.J[6,12] = ROcp13_36
+    sens.J[6,13] = ROcp13_612
+    sens.A[1] = ACcp13_18
+    sens.A[2] = ACcp13_28
+    sens.A[3] = ACcp13_38
+    sens.OMP[1] = OPcp13_18
+    sens.OMP[2] = OPcp13_28
+    sens.OMP[3] = OPcp13_38
 
  
 
