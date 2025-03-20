@@ -174,8 +174,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>592.0</x>
-              <y>765.0</y>
+              <x>844.0</x>
+              <y>758.0</y>
             </position>
           </x2D>
           <x3D>
@@ -299,6 +299,91 @@
             <position>
               <x>715.0</x>
               <y>139.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_6</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>824.0</x>
+              <y>345.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_7</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>724.0</x>
+              <y>395.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_8</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>717.0</x>
+              <y>351.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_9</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>913.0</x>
+              <y>355.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_10</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>898.0</x>
+              <y>395.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1179,6 +1264,818 @@
         </x3D>
       </graphics>
     </body>
+    <body>
+      <bodyname>main_support_arriere</bodyname>
+      <parent>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_6</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_18</jointname>
+        <type>T1</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>797.0</x>
+              <y>413.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_19</jointname>
+        <type>T2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>830.0</x>
+              <y>429.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_20</jointname>
+        <type>T3</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>832.0</x>
+              <y>449.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_21</jointname>
+        <type>R3</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>832.0</x>
+              <y>458.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_22</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>835.0</x>
+              <y>469.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_23</jointname>
+        <type>R1</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>831.0</x>
+              <y>606.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>554.0</x>
+              <y>574.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_1</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>552.0</x>
+              <y>609.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_2</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>551.0</x>
+              <y>651.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_3</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1102.0</x>
+              <y>575.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_4</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1102.0</x>
+              <y>606.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_5</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1099.0</x>
+              <y>642.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_6</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>753.0</x>
+              <y>574.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_7</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>908.0</x>
+              <y>570.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_8</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>786.0</x>
+              <y>570.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_9</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>933.0</x>
+              <y>575.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-295.0</x>
+            <y>-43.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>583.0</x>
+            <y>97.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>112.0</x>
+              <y>-43.0</y>
+            </control_point>
+            <control_point>
+              <x>112.0</x>
+              <y>47.0</y>
+            </control_point>
+            <control_point>
+              <x>-115.0</x>
+              <y>47.0</y>
+            </control_point>
+            <control_point>
+              <x>-115.0</x>
+              <y>-43.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Roue_arriere_gauche</bodyname>
+      <parent>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_1</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_30</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>457.0</x>
+              <y>607.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-24.0</x>
+            <y>-70.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>43.0</x>
+            <y>107.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>19.0</x>
+              <y>-70.0</y>
+            </control_point>
+            <control_point>
+              <x>19.0</x>
+              <y>37.0</y>
+            </control_point>
+            <control_point>
+              <x>-24.0</x>
+              <y>37.0</y>
+            </control_point>
+            <control_point>
+              <x>-24.0</x>
+              <y>-70.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Roue_arriere_droite</bodyname>
+      <parent>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_4</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_31</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1191.0</x>
+              <y>605.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-26.0</x>
+            <y>-54.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>55.0</x>
+            <y>99.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>29.0</x>
+              <y>-54.0</y>
+            </control_point>
+            <control_point>
+              <x>29.0</x>
+              <y>45.0</y>
+            </control_point>
+            <control_point>
+              <x>-26.0</x>
+              <y>45.0</y>
+            </control_point>
+            <control_point>
+              <x>-26.0</x>
+              <y>-54.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>bielle_gauche_haute</bodyname>
+      <parent>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_6</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_24</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>721.0</x>
+              <y>536.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>720.0</x>
+              <y>485.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-20.0</x>
+            <y>-64.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>39.0</x>
+            <y>78.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>19.0</x>
+              <y>-64.0</y>
+            </control_point>
+            <control_point>
+              <x>19.0</x>
+              <y>14.0</y>
+            </control_point>
+            <control_point>
+              <x>-20.0</x>
+              <y>14.0</y>
+            </control_point>
+            <control_point>
+              <x>-20.0</x>
+              <y>-64.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Body_2</bodyname>
+      <parent>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_7</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_27</jointname>
+        <type>R3</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>878.0</x>
+              <y>568.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_28</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>888.0</x>
+              <y>529.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>880.0</x>
+              <y>485.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-23.0</x>
+            <y>-52.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>30.0</x>
+            <y>67.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>7.0</x>
+              <y>-36.0</y>
+            </control_point>
+            <control_point>
+              <x>7.0</x>
+              <y>-8.0</y>
+            </control_point>
+            <control_point>
+              <x>-32.0</x>
+              <y>-8.0</y>
+            </control_point>
+            <control_point>
+              <x>-32.0</x>
+              <y>-36.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Body_1</bodyname>
+      <parent>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_8</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_25</jointname>
+        <type>R3</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>779.0</x>
+              <y>551.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_26</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>761.0</x>
+              <y>539.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>762.0</x>
+              <y>486.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-10.0</x>
+            <y>-64.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>26.0</x>
+            <y>73.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>16.0</x>
+              <y>-45.0</y>
+            </control_point>
+            <control_point>
+              <x>16.0</x>
+              <y>9.0</y>
+            </control_point>
+            <control_point>
+              <x>-10.0</x>
+              <y>9.0</y>
+            </control_point>
+            <control_point>
+              <x>-10.0</x>
+              <y>-45.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Body_3</bodyname>
+      <parent>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_9</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_29</jointname>
+        <type>R2</type>
+        <nature>independent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>933.0</x>
+              <y>539.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>929.0</x>
+              <y>487.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-24.0</x>
+            <y>-59.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>37.0</x>
+            <y>67.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>13.0</x>
+              <y>-59.0</y>
+            </control_point>
+            <control_point>
+              <x>13.0</x>
+              <y>8.0</y>
+            </control_point>
+            <control_point>
+              <x>-24.0</x>
+              <y>8.0</y>
+            </control_point>
+            <control_point>
+              <x>-24.0</x>
+              <y>-59.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
   </bodytree>
   <cuts>
     <!--this is the cut list-->
@@ -1231,6 +2128,70 @@
         </x3D>
       </graphics>
     </rod>
+    <ball>
+      <name>Cut_3</name>
+      <endpoint1>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_6</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>bielle_gauche_haute</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_4</name>
+      <endpoint1>
+        <bodyname>Body_1</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_6</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_5</name>
+      <endpoint1>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_6</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Body_2</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_6</name>
+      <endpoint1>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_6</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Body_3</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
   </cuts>
   <links>
     <!--this is the link list-->
@@ -1258,6 +2219,70 @@
       </endpoint1>
       <endpoint2>
         <bodyname>Main_body</bodyname>
+        <pointname>Point_3</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
+    <link>
+      <name>Link_2</name>
+      <endpoint1>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_8</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
+    <link>
+      <name>Link_3</name>
+      <endpoint1>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_2</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_7</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
+    <link>
+      <name>Link_4</name>
+      <endpoint1>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_10</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>main_support_arriere</bodyname>
+        <pointname>Point_5</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
+    <link>
+      <name>Link_5</name>
+      <endpoint1>
+        <bodyname>Main_body</bodyname>
+        <pointname>Point_9</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>main_support_arriere</bodyname>
         <pointname>Point_3</pointname>
       </endpoint2>
       <graphics>
