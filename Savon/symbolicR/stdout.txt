@@ -1,0 +1,7 @@
+
+##############################################################
+#	file7.gen 18/03/2025 12:39:38    messages
+##############################################################
+Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file7.gen
+Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
+F2 - Recursive Inverse Dynamics of tree-like MBS
