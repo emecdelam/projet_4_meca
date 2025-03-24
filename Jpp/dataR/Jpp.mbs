@@ -636,7 +636,12 @@
       <joint>
         <jointname>Joint_10</jointname>
         <type>R3</type>
-        <nature>independent</nature>
+        <nature>driven</nature>
+        <symbols>
+          <q />
+          <qd />
+          <qdd />
+        </symbols>
         <graphics>
           <x2D>
             <position>
