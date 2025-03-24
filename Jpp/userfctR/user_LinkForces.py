@@ -40,22 +40,22 @@ def user_LinkForces(Z, Zd, mbs_data, tsim, identity):
         Flink = K*(Z-L0) + D * Zd
     if identity == mbs_data.link_id['Link_2']:
         L0 = 0.5
-        K = 3000
+        K = 5000
         D = 120
         Flink = K*(Z-L0) + D * Zd
     if identity == mbs_data.link_id['Link_3']:
         L0 = 0.5
-        K = 3000
+        K = 5000
         D = 120
         Flink = K*(Z-L0) + D * Zd
     if identity == mbs_data.link_id['Link_4']:
         L0 = 0.5
-        K = 3000
+        K = 5000
         D = 120
         Flink = K*(Z-L0) + D * Zd
     if identity == mbs_data.link_id['Link_5']:
         L0 = 0.5
-        K = 3000
+        K = 5000
         D = 120
         Flink = K*(Z-L0) + D * Zd
     if identity == mbs_data.link_id['Link_6']:

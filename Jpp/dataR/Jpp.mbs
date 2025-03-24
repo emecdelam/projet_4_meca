@@ -212,7 +212,7 @@
         <pointname>Point_0</pointname>
         <coordinates>
           <x>2.0</x>
-          <y>-1.323</y>
+          <y>-0.023</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -229,7 +229,7 @@
         <pointname>Point_1</pointname>
         <coordinates>
           <x>2.0</x>
-          <y>-1.374</y>
+          <y>-0.074</y>
           <z>0.173</z>
         </coordinates>
         <graphics>
@@ -246,7 +246,7 @@
         <pointname>Point_2</pointname>
         <coordinates>
           <x>2.0</x>
-          <y>-1.41</y>
+          <y>-0.2</y>
           <z>0.51</z>
         </coordinates>
         <graphics>
@@ -263,7 +263,7 @@
         <pointname>Point_3</pointname>
         <coordinates>
           <x>2.0</x>
-          <y>1.323</y>
+          <y>0.023</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -280,7 +280,7 @@
         <pointname>Point_4</pointname>
         <coordinates>
           <x>2.0</x>
-          <y>1.374</y>
+          <y>0.074</y>
           <z>0.173</z>
         </coordinates>
         <graphics>
@@ -297,7 +297,7 @@
         <pointname>Point_5</pointname>
         <coordinates>
           <x>2.0</x>
-          <y>1.41</y>
+          <y>0.2</y>
           <z>0.51</z>
         </coordinates>
         <graphics>
@@ -538,7 +538,7 @@
         <pointname>Point_0</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>-0.347</y>
+          <y>-0.8</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -555,7 +555,7 @@
         <pointname>Point_1</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>-0.24</y>
+          <y>-0.5</y>
           <z>0.035</z>
         </coordinates>
         <graphics>
@@ -872,7 +872,7 @@
         <pointname>Point_0</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>-0.243</y>
+          <y>-0.696</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -960,7 +960,7 @@
         <pointname>Point_0</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>0.347</y>
+          <y>0.8</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -977,7 +977,7 @@
         <pointname>Point_1</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>0.24</y>
+          <y>0.5</y>
           <z>0.035</z>
         </coordinates>
         <graphics>
@@ -1147,6 +1147,9 @@
         <jointname>Joint_14</jointname>
         <type>R1</type>
         <nature>driven</nature>
+        <initialvalue>
+          <q>-0.24</q>
+        </initialvalue>
         <symbols>
           <q />
           <qd />
@@ -1291,7 +1294,7 @@
         <pointname>Point_0</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>0.243</y>
+          <y>0.696</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -1566,7 +1569,7 @@
         <pointname>Point_6</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>-1.0</y>
+          <y>-1.124</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
@@ -1583,7 +1586,7 @@
         <pointname>Point_7</pointname>
         <coordinates>
           <x>0.0</x>
-          <y>1.0</y>
+          <y>1.124</y>
           <z>0.0</z>
         </coordinates>
         <graphics>
