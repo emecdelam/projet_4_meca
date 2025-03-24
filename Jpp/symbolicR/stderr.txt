@@ -1,6 +1,6 @@
 
 ##############################################################
-#	file6.gen 24/03/2025 20:37:20    errors
+#	file6.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -30,41 +30,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file7.gen 24/03/2025 20:37:20    errors
-##############################################################
-git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
-Warning !
-Unknown option/flag found in generation file : useXML
-
-	Computation of the kinematics........
-
-	Computation of the dynamics....................
-
-		Joints   28  27  26  25  24  23  22  21  20  19
-
-		    -->  18  17  16  15  14  13  12  11  10   9
-
-		    -->   8   7   6   5   4   3   2   1
-
-	Elimination of the superfluous equations.....................
-
-
-		Maximum simultaneous symbolic expressions :  3549
-
-		Maximum number of allocated Kbytes :  166
-
-
-	The symbolic equations have been generated 
-	in the directory: /usr/local/robotran/users/LEPL1504/upload/
-
-
- 		*** Generation symbolique reussie ! ***
-
-
-
-
-##############################################################
-#	file1.gen 24/03/2025 20:37:20    errors
+#	file1.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -89,7 +55,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file5.gen 24/03/2025 20:37:20    errors
+#	file5.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -114,7 +80,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file3.gen 24/03/2025 20:37:20    errors
+#	file3.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -139,7 +105,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file1b.gen 24/03/2025 20:37:20    errors
+#	file1b.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -164,7 +130,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file0.gen 24/03/2025 20:37:20    errors
+#	file0.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -198,7 +164,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file4.gen 24/03/2025 20:37:20    errors
+#	file4.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !
@@ -223,7 +189,7 @@ Unknown option/flag found in generation file : useXML
 
 
 ##############################################################
-#	file2.gen 24/03/2025 20:37:20    errors
+#	file2.gen 24/03/2025 20:40:33    errors
 ##############################################################
 git hash : a9259031f25de7c9f86dbac08464ef31e84ae3b1
 Warning !

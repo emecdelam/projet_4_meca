@@ -1,15 +1,7 @@
 
 ##############################################################
-#	file7.gen 24/03/2025 20:25:47    messages
+#	file6.gen 24/03/2025 20:40:33    messages
 ##############################################################
-Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file7.gen
+Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file6.gen
 Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
-F2 - Recursive Inverse Dynamics of tree-like MBS
-
-##############################################################
-#	file3.gen 24/03/2025 20:25:47    messages
-##############################################################
-Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file3.gen
-Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
-F8 - Constraints and Constraints Jacobian(h, J)
-nombre de contraintes elmiminees : 0
+F27 - Link Forces (3D)
