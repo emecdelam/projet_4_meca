@@ -36,17 +36,31 @@ def user_DrivenJoints(mbs_data, tsim):
     mbs_data.q[id_i]   = -omega
     
     
-    id_j = mbs_data.joint_id["Joint_22"]
+    id_k = mbs_data.joint_id["Joint_22"]
 
-    mbs_data.qdd[id_j] = 0
-    mbs_data.qd[id_j]  = 10
-    mbs_data.q[id_j]   = tsim * 10
+    mbs_data.qdd[id_k] = 0
+    mbs_data.qd[id_k]  = 10
+    mbs_data.q[id_k]   = tsim * 10
 
-    id_i = mbs_data.joint_id["Joint_23"]
+    id_l = mbs_data.joint_id["Joint_23"]
 
-    mbs_data.qdd[id_i] = 0
-    mbs_data.qd[id_i]  = 10
-    mbs_data.q[id_i]   = tsim * 10
+    mbs_data.qdd[id_l] = 0
+    mbs_data.qd[id_l]  = 10
+    mbs_data.q[id_l]   = tsim * 10
+    
+    
+    
+    id_m = mbs_data.joint_id["Joint_26"]
+
+    mbs_data.qdd[id_m] = 0
+    mbs_data.qd[id_m]  = 0.07
+    mbs_data.q[id_m]   = tsim * 0.07
+
+    id_n = mbs_data.joint_id["Joint_27"]
+
+    mbs_data.qdd[id_n] = 0
+    mbs_data.qd[id_n]  = 0.07
+    mbs_data.q[id_n]   = tsim * 0.07
     # Example: joint 5 under constant acceleration with non-zero initial
     #          coordinate (mbs_data.q0) and velocity (mbs_data.qd0).
     # mbs_data.qdd[5] = 2

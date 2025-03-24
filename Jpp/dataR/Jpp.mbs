@@ -736,8 +736,30 @@
         <graphics>
           <x2D>
             <position>
-              <x>417.0</x>
+              <x>409.0</x>
               <y>206.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_26</jointname>
+        <type>R3</type>
+        <nature>driven</nature>
+        <symbols>
+          <q />
+          <qd />
+          <qdd />
+        </symbols>
+        <graphics>
+          <x2D>
+            <position>
+              <x>373.0</x>
+              <y>230.0</y>
             </position>
           </x2D>
           <x3D>
@@ -753,8 +775,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>379.0</x>
-              <y>205.0</y>
+              <x>329.0</x>
+              <y>204.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1158,8 +1180,30 @@
         <graphics>
           <x2D>
             <position>
-              <x>1084.0</x>
+              <x>1095.0</x>
               <y>222.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <joint>
+        <jointname>Joint_27</jointname>
+        <type>R3</type>
+        <nature>driven</nature>
+        <symbols>
+          <q />
+          <qd />
+          <qdd />
+        </symbols>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1097.0</x>
+              <y>176.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1175,8 +1219,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>1142.0</x>
-              <y>224.0</y>
+              <x>1166.0</x>
+              <y>223.0</y>
             </position>
           </x2D>
           <x3D>
