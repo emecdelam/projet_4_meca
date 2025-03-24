@@ -10,7 +10,7 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Mon Mar 24 20:25:47 2025
+#	==> Generation Date: Mon Mar 24 20:33:49 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Jpp
@@ -401,9 +401,12 @@ def invdyna(phi,s,tsim):
     Fq316 = -Fs117*S17+Fs317*C17
     Cq116 = Cq117*C17+Cq317*S17
     Cq316 = -Cq117*S17+Cq317*C17
-    Fq115 = -s.frc[1,15]+Fq116
-    Fq215 = -s.frc[2,15]-Fq316*S16+Fs217*C16
-    Fq315 = -s.frc[3,15]+Fq316*C16+Fs217*S16
+    Fs115 = -s.frc[1,15]+s.m[15]*ALPHA115
+    Fs215 = -s.frc[2,15]+s.m[15]*ALPHA215
+    Fs315 = -s.frc[3,15]+s.m[15]*ALPHA314
+    Fq115 = Fq116+Fs115
+    Fq215 = Fs215-Fq316*S16+Fs217*C16
+    Fq315 = Fs315+Fq316*C16+Fs217*S16
     Cq115 = -s.trq[1,15]+Cq116+s.In[1,15]*OMp115-s.In[5,15]*OM215*OM315+s.In[9,15]*OM215*OM315+s.dpt[2,26]*(Fq316*C16+Fs217*S16)-s.dpt[3,26]*(-Fq316*S16+Fs217*C16)
     Cq215 = -s.trq[2,15]+s.In[1,15]*OM115*OM315+s.In[5,15]*OMp215-s.In[9,15]*OM115*OM315+Cq217*C16-Cq316*S16+Fq116*s.dpt[3,26]
     Cq315 = -s.trq[3,15]-s.In[1,15]*OM115*OM215+s.In[5,15]*OM115*OM215+s.In[9,15]*OMp315+Cq217*S16+Cq316*C16-Fq116*s.dpt[2,26]
