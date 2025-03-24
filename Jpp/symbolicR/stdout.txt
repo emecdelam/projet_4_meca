@@ -1,14 +1,7 @@
 
 ##############################################################
-#	file1b.gen 24/03/2025 11:43:11    messages
+#	file0.gen 24/03/2025 16:03:49    messages
 ##############################################################
-Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file1b.gen
+Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file0.gen
 Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
-F6 - Sensors Kinematics
-
-##############################################################
-#	file2.gen 24/03/2025 11:43:11    messages
-##############################################################
-Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file2.gen
-Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
-F7 - Link Forces (1D)
+F1 - Recursive Direct Dynamics of tree-like MBS

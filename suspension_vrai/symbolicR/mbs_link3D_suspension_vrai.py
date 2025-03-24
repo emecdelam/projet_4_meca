@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Thu Mar 20 15:02:22 2025
+#	==> Generation Date: Mon Mar 24 14:14:28 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: suspension_vrai
 #
-#	==> Number of joints: 13
+#	==> Number of joints: 32
 #
 #	==> Function: F27 - Link Forces (3D)
 #

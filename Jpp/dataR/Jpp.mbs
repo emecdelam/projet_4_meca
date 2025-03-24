@@ -354,8 +354,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>734.0</x>
-              <y>324.0</y>
+              <x>703.0</x>
+              <y>367.0</y>
             </position>
           </x2D>
           <x3D />
@@ -371,8 +371,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>803.0</x>
-              <y>321.0</y>
+              <x>841.0</x>
+              <y>371.0</y>
             </position>
           </x2D>
           <x3D />
@@ -424,6 +424,40 @@
             <position>
               <x>772.0</x>
               <y>281.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_13</pointname>
+        <coordinates>
+          <x>-2.5</x>
+          <y>-0.2</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>729.0</x>
+              <y>365.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_14</pointname>
+        <coordinates>
+          <x>-2.5</x>
+          <y>0.2</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>804.0</x>
+              <y>360.0</y>
             </position>
           </x2D>
           <x3D />
@@ -702,8 +736,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>386.0</x>
-              <y>205.0</y>
+              <x>417.0</x>
+              <y>206.0</y>
             </position>
           </x2D>
           <x3D>
@@ -719,8 +753,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>304.0</x>
-              <y>208.0</y>
+              <x>379.0</x>
+              <y>205.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1342,8 +1376,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>744.0</x>
-              <y>410.0</y>
+              <x>781.0</x>
+              <y>409.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1359,8 +1393,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>796.0</x>
-              <y>432.0</y>
+              <x>763.0</x>
+              <y>434.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1376,8 +1410,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>720.0</x>
-              <y>462.0</y>
+              <x>769.0</x>
+              <y>464.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1393,8 +1427,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>776.0</x>
-              <y>466.0</y>
+              <x>773.0</x>
+              <y>490.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1470,8 +1504,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>639.0</x>
-              <y>536.0</y>
+              <x>682.0</x>
+              <y>519.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1521,8 +1555,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>884.0</x>
-              <y>538.0</y>
+              <x>857.0</x>
+              <y>514.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1557,6 +1591,40 @@
             <position>
               <x>952.0</x>
               <y>543.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_8</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.2</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>813.0</x>
+              <y>516.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_9</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>-0.2</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>729.0</x>
+              <y>519.0</y>
             </position>
           </x2D>
           <x3D />
@@ -1939,8 +2007,8 @@
       <graphics>
         <x2D>
           <position>
-            <x>-15.0</x>
-            <y>-65.0</y>
+            <x>-14.0</x>
+            <y>-60.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -1953,20 +2021,20 @@
           </size>
           <control_points>
             <control_point>
-              <x>19.0</x>
-              <y>-65.0</y>
+              <x>20.0</x>
+              <y>-60.0</y>
             </control_point>
             <control_point>
-              <x>19.0</x>
-              <y>29.0</y>
+              <x>20.0</x>
+              <y>34.0</y>
             </control_point>
             <control_point>
-              <x>-15.0</x>
-              <y>29.0</y>
+              <x>-14.0</x>
+              <y>34.0</y>
             </control_point>
             <control_point>
-              <x>-15.0</x>
-              <y>-65.0</y>
+              <x>-14.0</x>
+              <y>-60.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -2144,6 +2212,38 @@
         </x3D>
       </graphics>
     </link>
+    <link>
+      <name>Link_6</name>
+      <endpoint1>
+        <bodyname>Body_1</bodyname>
+        <pointname>Point_13</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Body_10</bodyname>
+        <pointname>Point_9</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
+    <link>
+      <name>Link_7</name>
+      <endpoint1>
+        <bodyname>Body_1</bodyname>
+        <pointname>Point_14</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Body_10</bodyname>
+        <pointname>Point_8</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </link>
   </links>
   <user_models>
     <!--this is the userModel list-->
@@ -2172,6 +2272,57 @@
       <lightAndShadowMode>LIGHTS_NO_SPEC_SHADER</lightAndShadowMode>
       <glfwSample>4</glfwSample>
     </opengl>
+    <viewpoints>
+      <!--This is the viewpoint list-->
+      <viewpoint>
+        <name>bus</name>
+        <joint>Joint_3</joint>
+        <position>
+          <x>1.0</x>
+          <y>1.0</y>
+          <z>1.0</z>
+        </position>
+        <target>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </target>
+        <up>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>1.0</z>
+        </up>
+        <projection>perspective</projection>
+        <scale>1.0</scale>
+        <fieldOfView>0.785</fieldOfView>
+        <frontClipDst>0.01</frontClipDst>
+        <backClipDst>50.0</backClipDst>
+      </viewpoint>
+      <viewpoint>
+        <name>rear_susp</name>
+        <joint>Joint_21</joint>
+        <position>
+          <x>1.0</x>
+          <y>1.0</y>
+          <z>1.0</z>
+        </position>
+        <target>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </target>
+        <up>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>1.0</z>
+        </up>
+        <projection>perspective</projection>
+        <scale>1.0</scale>
+        <fieldOfView>0.785</fieldOfView>
+        <frontClipDst>0.01</frontClipDst>
+        <backClipDst>50.0</backClipDst>
+      </viewpoint>
+    </viewpoints>
     <lights>
       <!--This is the light list-->
       <directionalLight>
