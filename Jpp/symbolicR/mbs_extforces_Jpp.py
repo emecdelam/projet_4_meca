@@ -10,7 +10,7 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Tue Mar 25 21:58:23 2025
+#	==> Generation Date: Tue Mar 25 22:12:43 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Jpp
@@ -178,9 +178,9 @@ def extforces(frc, trq, s, tsim):
     ACcp1_17 = qdd[3]+OMcp1_26*ORcp1_37-OMcp1_36*ORcp1_27+OPcp1_26*RLcp1_37-OPcp1_36*RLcp1_27
     ACcp1_27 = qdd[2]-OMcp1_16*ORcp1_37+OMcp1_36*ORcp1_17-OPcp1_16*RLcp1_37+OPcp1_36*RLcp1_17
     ACcp1_37 = qdd[1]+OMcp1_16*ORcp1_27-OMcp1_26*ORcp1_17+OPcp1_16*RLcp1_27-OPcp1_26*RLcp1_17
-    RLcp1_18 = ROcp1_47*s.dpt[2,18]
-    RLcp1_28 = ROcp1_57*s.dpt[2,18]
-    RLcp1_38 = ROcp1_67*s.dpt[2,18]
+    RLcp1_18 = ROcp1_47*s.dpt[2,22]
+    RLcp1_28 = ROcp1_57*s.dpt[2,22]
+    RLcp1_38 = ROcp1_67*s.dpt[2,22]
     POcp1_18 = POcp1_17+RLcp1_18
     POcp1_28 = POcp1_27+RLcp1_28
     POcp1_38 = POcp1_37+RLcp1_38
@@ -205,9 +205,9 @@ def extforces(frc, trq, s, tsim):
     OPcp1_19 = OPcp1_18+qd[9]*(OMcp1_28*ROcp1_98-OMcp1_38*ROcp1_88)+qdd[9]*ROcp1_78
     OPcp1_29 = OPcp1_28+qd[9]*(-OMcp1_18*ROcp1_98+OMcp1_38*ROcp1_78)+qdd[9]*ROcp1_88
     OPcp1_39 = OPcp1_38+qd[9]*(OMcp1_18*ROcp1_88-OMcp1_28*ROcp1_78)+qdd[9]*ROcp1_98
-    RLcp1_110 = ROcp1_49*s.dpt[2,21]+ROcp1_78*s.dpt[3,21]
-    RLcp1_210 = ROcp1_59*s.dpt[2,21]+ROcp1_88*s.dpt[3,21]
-    RLcp1_310 = ROcp1_69*s.dpt[2,21]+ROcp1_98*s.dpt[3,21]
+    RLcp1_110 = ROcp1_49*s.dpt[2,25]+ROcp1_78*s.dpt[3,25]
+    RLcp1_210 = ROcp1_59*s.dpt[2,25]+ROcp1_88*s.dpt[3,25]
+    RLcp1_310 = ROcp1_69*s.dpt[2,25]+ROcp1_98*s.dpt[3,25]
     POcp1_110 = POcp1_18+RLcp1_110
     POcp1_210 = POcp1_28+RLcp1_210
     POcp1_310 = POcp1_38+RLcp1_310
@@ -327,9 +327,9 @@ def extforces(frc, trq, s, tsim):
     ACcp2_17 = qdd[3]+OMcp2_26*ORcp2_37-OMcp2_36*ORcp2_27+OPcp2_26*RLcp2_37-OPcp2_36*RLcp2_27
     ACcp2_27 = qdd[2]-OMcp2_16*ORcp2_37+OMcp2_36*ORcp2_17-OPcp2_16*RLcp2_37+OPcp2_36*RLcp2_17
     ACcp2_37 = qdd[1]+OMcp2_16*ORcp2_27-OMcp2_26*ORcp2_17+OPcp2_16*RLcp2_27-OPcp2_26*RLcp2_17
-    RLcp2_18 = ROcp2_413*s.dpt[2,25]
-    RLcp2_28 = ROcp2_513*s.dpt[2,25]
-    RLcp2_38 = ROcp2_613*s.dpt[2,25]
+    RLcp2_18 = ROcp2_413*s.dpt[2,29]
+    RLcp2_28 = ROcp2_513*s.dpt[2,29]
+    RLcp2_38 = ROcp2_613*s.dpt[2,29]
     POcp2_18 = POcp2_17+RLcp2_18
     POcp2_28 = POcp2_27+RLcp2_28
     POcp2_38 = POcp2_37+RLcp2_38
@@ -354,9 +354,9 @@ def extforces(frc, trq, s, tsim):
     OPcp2_19 = OPcp2_18+qd[15]*(OMcp2_28*ROcp2_914-OMcp2_38*ROcp2_814)+qdd[15]*ROcp2_714
     OPcp2_29 = OPcp2_28+qd[15]*(-OMcp2_18*ROcp2_914+OMcp2_38*ROcp2_714)+qdd[15]*ROcp2_814
     OPcp2_39 = OPcp2_38+qd[15]*(OMcp2_18*ROcp2_814-OMcp2_28*ROcp2_714)+qdd[15]*ROcp2_914
-    RLcp2_110 = ROcp2_415*s.dpt[2,28]+ROcp2_714*s.dpt[3,28]
-    RLcp2_210 = ROcp2_515*s.dpt[2,28]+ROcp2_814*s.dpt[3,28]
-    RLcp2_310 = ROcp2_615*s.dpt[2,28]+ROcp2_914*s.dpt[3,28]
+    RLcp2_110 = ROcp2_415*s.dpt[2,32]+ROcp2_714*s.dpt[3,32]
+    RLcp2_210 = ROcp2_515*s.dpt[2,32]+ROcp2_814*s.dpt[3,32]
+    RLcp2_310 = ROcp2_615*s.dpt[2,32]+ROcp2_914*s.dpt[3,32]
     POcp2_110 = POcp2_18+RLcp2_110
     POcp2_210 = POcp2_28+RLcp2_210
     POcp2_310 = POcp2_38+RLcp2_310
@@ -512,9 +512,9 @@ def extforces(frc, trq, s, tsim):
     OPcp3_112 = OPcp3_111+qd[24]*(OMcp3_211*ROcp3_923-OMcp3_311*ROcp3_823)+qdd[24]*ROcp3_723
     OPcp3_212 = OPcp3_211+qd[24]*(-OMcp3_111*ROcp3_923+OMcp3_311*ROcp3_723)+qdd[24]*ROcp3_823
     OPcp3_312 = OPcp3_311+qd[24]*(OMcp3_111*ROcp3_823-OMcp3_211*ROcp3_723)+qdd[24]*ROcp3_923
-    RLcp3_113 = ROcp3_424*s.dpt[2,38]
-    RLcp3_213 = ROcp3_524*s.dpt[2,38]
-    RLcp3_313 = ROcp3_624*s.dpt[2,38]
+    RLcp3_113 = ROcp3_424*s.dpt[2,42]
+    RLcp3_213 = ROcp3_524*s.dpt[2,42]
+    RLcp3_313 = ROcp3_624*s.dpt[2,42]
     POcp3_113 = POcp3_19+RLcp3_113
     POcp3_213 = POcp3_29+RLcp3_213
     POcp3_313 = POcp3_39+RLcp3_313
@@ -664,9 +664,9 @@ def extforces(frc, trq, s, tsim):
     OPcp4_112 = OPcp4_111+qd[24]*(OMcp4_211*ROcp4_923-OMcp4_311*ROcp4_823)+qdd[24]*ROcp4_723
     OPcp4_212 = OPcp4_211+qd[24]*(-OMcp4_111*ROcp4_923+OMcp4_311*ROcp4_723)+qdd[24]*ROcp4_823
     OPcp4_312 = OPcp4_311+qd[24]*(OMcp4_111*ROcp4_823-OMcp4_211*ROcp4_723)+qdd[24]*ROcp4_923
-    RLcp4_113 = ROcp4_424*s.dpt[2,39]
-    RLcp4_213 = ROcp4_524*s.dpt[2,39]
-    RLcp4_313 = ROcp4_624*s.dpt[2,39]
+    RLcp4_113 = ROcp4_424*s.dpt[2,43]
+    RLcp4_213 = ROcp4_524*s.dpt[2,43]
+    RLcp4_313 = ROcp4_624*s.dpt[2,43]
     POcp4_113 = POcp4_19+RLcp4_113
     POcp4_213 = POcp4_29+RLcp4_213
     POcp4_313 = POcp4_39+RLcp4_313
