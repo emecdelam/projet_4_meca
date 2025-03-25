@@ -463,6 +463,40 @@
           <x3D />
         </graphics>
       </point>
+      <point>
+        <pointname>Point_15</pointname>
+        <coordinates>
+          <x>1.7</x>
+          <y>-0.05</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>694.0</x>
+              <y>268.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_16</pointname>
+        <coordinates>
+          <x>1.7</x>
+          <y>0.05</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>841.0</x>
+              <y>267.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
       <graphics>
         <x2D>
           <position>
@@ -636,12 +670,7 @@
       <joint>
         <jointname>Joint_10</jointname>
         <type>R3</type>
-        <nature>driven</nature>
-        <symbols>
-          <q />
-          <qd />
-          <qdd />
-        </symbols>
+        <nature>dependent</nature>
         <graphics>
           <x2D>
             <position>
@@ -705,8 +734,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>445.0</x>
-              <y>254.0</y>
+              <x>442.0</x>
+              <y>260.0</y>
             </position>
           </x2D>
           <x3D />
@@ -872,6 +901,32 @@
           <x3D_com />
           <x3D_points />
           <x3D_lines />
+          <x3D_shapes>
+            <cylinder>
+              <name>roue</name>
+              <position>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+              </position>
+              <scale>
+                <x>1.0</x>
+                <y>1.0</y>
+                <z>1.0</z>
+              </scale>
+              <rotation>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+              </rotation>
+              <color R="204" G="204" B="204" />
+              <specularColor R="255" G="255" B="255" />
+              <shininess>250.0</shininess>
+              <transparency>0.0</transparency>
+              <radius>0.2</radius>
+              <height>0.1</height>
+            </cylinder>
+          </x3D_shapes>
         </x3D>
       </graphics>
     </body>
@@ -1325,6 +1380,32 @@
           <x3D_com />
           <x3D_points />
           <x3D_lines />
+          <x3D_shapes>
+            <cylinder>
+              <name>New_Shape</name>
+              <position>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+              </position>
+              <scale>
+                <x>1.0</x>
+                <y>1.0</y>
+                <z>1.0</z>
+              </scale>
+              <rotation>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+              </rotation>
+              <color R="204" G="204" B="204" />
+              <specularColor R="255" G="255" B="255" />
+              <shininess>250.0</shininess>
+              <transparency>0.0</transparency>
+              <radius>0.2</radius>
+              <height>0.1</height>
+            </cylinder>
+          </x3D_shapes>
         </x3D>
       </graphics>
     </body>
@@ -2116,6 +2197,209 @@
         </x3D>
       </graphics>
     </body>
+    <body>
+      <bodyname>Body_15</bodyname>
+      <parent>
+        <bodyname>Body_1</bodyname>
+        <pointname>Point_15</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_28</jointname>
+        <type>R3</type>
+        <nature>dependent</nature>
+        <graphics>
+          <x2D>
+            <position>
+              <x>612.0</x>
+              <y>344.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.25</x>
+          <y>0.03</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>617.0</x>
+              <y>279.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_1</pointname>
+        <coordinates>
+          <x>0.15</x>
+          <y>-0.05</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>599.0</x>
+              <y>313.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-15.0</x>
+            <y>-74.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>26.0</x>
+            <y>80.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>11.0</x>
+              <y>-74.0</y>
+            </control_point>
+            <control_point>
+              <x>11.0</x>
+              <y>6.0</y>
+            </control_point>
+            <control_point>
+              <x>-15.0</x>
+              <y>6.0</y>
+            </control_point>
+            <control_point>
+              <x>-15.0</x>
+              <y>-74.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
+    <body>
+      <bodyname>Body_16</bodyname>
+      <parent>
+        <bodyname>Body_1</bodyname>
+        <pointname>Point_16</pointname>
+      </parent>
+      <joint>
+        <jointname>Joint_29</jointname>
+        <type>R3</type>
+        <nature>driven</nature>
+        <symbols>
+          <q />
+          <qd />
+          <qdd />
+        </symbols>
+        <graphics>
+          <x2D>
+            <position>
+              <x>929.0</x>
+              <y>338.0</y>
+            </position>
+          </x2D>
+          <x3D>
+            <x3D_joint />
+            <x3D_frame />
+          </x3D>
+        </graphics>
+      </joint>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.25</x>
+          <y>-0.03</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>932.0</x>
+              <y>272.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <point>
+        <pointname>Point_1</pointname>
+        <coordinates>
+          <x>0.15</x>
+          <y>0.05</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>942.0</x>
+              <y>306.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+      </point>
+      <graphics>
+        <x2D>
+          <position>
+            <x>-6.0</x>
+            <y>-74.0</y>
+          </position>
+          <name_pos>
+            <x>0.0</x>
+            <y>0.0</y>
+          </name_pos>
+          <shape>rectangle</shape>
+          <size>
+            <x>20.0</x>
+            <y>79.0</y>
+          </size>
+          <control_points>
+            <control_point>
+              <x>14.0</x>
+              <y>-74.0</y>
+            </control_point>
+            <control_point>
+              <x>14.0</x>
+              <y>5.0</y>
+            </control_point>
+            <control_point>
+              <x>-6.0</x>
+              <y>5.0</y>
+            </control_point>
+            <control_point>
+              <x>-6.0</x>
+              <y>-74.0</y>
+            </control_point>
+          </control_points>
+          <angle>0.0</angle>
+        </x2D>
+        <x3D>
+          <x3D_com />
+          <x3D_points />
+          <x3D_lines />
+        </x3D>
+      </graphics>
+    </body>
   </bodytree>
   <cuts>
     <!--this is the cut list-->
@@ -2186,14 +2470,48 @@
     <rod>
       <name>Cut_4</name>
       <endpoint1>
+        <bodyname>Body_15</bodyname>
+        <pointname>Point_1</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Body_16</bodyname>
+        <pointname>Point_1</pointname>
+      </endpoint2>
+      <length>0.205</length>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </rod>
+    <rod>
+      <name>Cut_5</name>
+      <endpoint1>
         <bodyname>Body_4</bodyname>
         <pointname>Point_2</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Body_15</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <length>0.8</length>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </rod>
+    <rod>
+      <name>Cut_6</name>
+      <endpoint1>
+        <bodyname>Body_16</bodyname>
+        <pointname>Point_0</pointname>
       </endpoint1>
       <endpoint2>
         <bodyname>Body_8</bodyname>
         <pointname>Point_2</pointname>
       </endpoint2>
-      <length>1.646</length>
+      <length>0.8</length>
       <graphics>
         <x3D>
           <shown />

@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Mon Mar 24 20:40:33 2025
+#	==> Generation Date: Tue Mar 25 21:58:23 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Jpp
 #
-#	==> Number of joints: 28
+#	==> Number of joints: 30
 #
 #	==> Function: F7 - Link Forces (1D)
 #
@@ -48,8 +48,8 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
  
 # Link anchor points Kinematics
 
-    RLlnk2_22 = s.dpt[2,17]*C7-s.dpt[3,17]*S7
-    RLlnk2_32 = s.dpt[2,17]*S7+s.dpt[3,17]*C7
+    RLlnk2_22 = s.dpt[2,19]*C7-s.dpt[3,19]*S7
+    RLlnk2_32 = s.dpt[2,19]*S7+s.dpt[3,19]*C7
     POlnk2_22 = RLlnk2_22+s.dpt[2,1]
     ORlnk2_22 = -qd[7]*RLlnk2_32
     ORlnk2_32 = qd[7]*RLlnk2_22
@@ -62,8 +62,8 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     e21 = Plnk21/Z1
     e31 = Plnk31/Z1
     Zd1 = ORlnk2_22*e21+ORlnk2_32*e31
-    RLlnk4_22 = s.dpt[2,24]*C13-s.dpt[3,24]*S13
-    RLlnk4_32 = s.dpt[2,24]*S13+s.dpt[3,24]*C13
+    RLlnk4_22 = s.dpt[2,26]*C13-s.dpt[3,26]*S13
+    RLlnk4_32 = s.dpt[2,26]*S13+s.dpt[3,26]*C13
     POlnk4_22 = RLlnk4_22+s.dpt[2,4]
     ORlnk4_22 = -qd[13]*RLlnk4_32
     ORlnk4_32 = qd[13]*RLlnk4_22
@@ -92,9 +92,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     OMlnk6_16 = qd[22]+qd[24]*S23
     OMlnk6_26 = OMlnk6_25+qd[24]*ROlnk6_823
     OMlnk6_36 = OMlnk6_35+qd[24]*ROlnk6_923
-    RLlnk6_17 = ROlnk6_124*s.dpt[1,30]+ROlnk6_424*s.dpt[2,30]
-    RLlnk6_27 = ROlnk6_224*s.dpt[1,30]+ROlnk6_524*s.dpt[2,30]
-    RLlnk6_37 = ROlnk6_324*s.dpt[1,30]+ROlnk6_624*s.dpt[2,30]
+    RLlnk6_17 = ROlnk6_124*s.dpt[1,32]+ROlnk6_424*s.dpt[2,32]
+    RLlnk6_27 = ROlnk6_224*s.dpt[1,32]+ROlnk6_524*s.dpt[2,32]
+    RLlnk6_37 = ROlnk6_324*s.dpt[1,32]+ROlnk6_624*s.dpt[2,32]
     POlnk6_17 = POlnk6_12+RLlnk6_17
     POlnk6_27 = q[21]+RLlnk6_27
     POlnk6_37 = q[19]+RLlnk6_37
@@ -129,9 +129,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     OMlnk8_16 = qd[22]+qd[24]*S23
     OMlnk8_26 = OMlnk8_25+qd[24]*ROlnk8_823
     OMlnk8_36 = OMlnk8_35+qd[24]*ROlnk8_923
-    RLlnk8_17 = ROlnk8_124*s.dpt[1,31]+ROlnk8_424*s.dpt[2,31]
-    RLlnk8_27 = ROlnk8_224*s.dpt[1,31]+ROlnk8_524*s.dpt[2,31]
-    RLlnk8_37 = ROlnk8_324*s.dpt[1,31]+ROlnk8_624*s.dpt[2,31]
+    RLlnk8_17 = ROlnk8_124*s.dpt[1,33]+ROlnk8_424*s.dpt[2,33]
+    RLlnk8_27 = ROlnk8_224*s.dpt[1,33]+ROlnk8_524*s.dpt[2,33]
+    RLlnk8_37 = ROlnk8_324*s.dpt[1,33]+ROlnk8_624*s.dpt[2,33]
     POlnk8_17 = POlnk8_12+RLlnk8_17
     POlnk8_27 = q[21]+RLlnk8_27
     POlnk8_37 = q[19]+RLlnk8_37
@@ -166,9 +166,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     OMlnk10_16 = qd[22]+qd[24]*S23
     OMlnk10_26 = OMlnk10_25+qd[24]*ROlnk10_823
     OMlnk10_36 = OMlnk10_35+qd[24]*ROlnk10_923
-    RLlnk10_17 = ROlnk10_124*s.dpt[1,33]+ROlnk10_424*s.dpt[2,33]
-    RLlnk10_27 = ROlnk10_224*s.dpt[1,33]+ROlnk10_524*s.dpt[2,33]
-    RLlnk10_37 = ROlnk10_324*s.dpt[1,33]+ROlnk10_624*s.dpt[2,33]
+    RLlnk10_17 = ROlnk10_124*s.dpt[1,35]+ROlnk10_424*s.dpt[2,35]
+    RLlnk10_27 = ROlnk10_224*s.dpt[1,35]+ROlnk10_524*s.dpt[2,35]
+    RLlnk10_37 = ROlnk10_324*s.dpt[1,35]+ROlnk10_624*s.dpt[2,35]
     POlnk10_17 = POlnk10_12+RLlnk10_17
     POlnk10_27 = q[21]+RLlnk10_27
     POlnk10_37 = q[19]+RLlnk10_37
@@ -203,9 +203,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     OMlnk12_16 = qd[22]+qd[24]*S23
     OMlnk12_26 = OMlnk12_25+qd[24]*ROlnk12_823
     OMlnk12_36 = OMlnk12_35+qd[24]*ROlnk12_923
-    RLlnk12_17 = ROlnk12_124*s.dpt[1,34]+ROlnk12_424*s.dpt[2,34]
-    RLlnk12_27 = ROlnk12_224*s.dpt[1,34]+ROlnk12_524*s.dpt[2,34]
-    RLlnk12_37 = ROlnk12_324*s.dpt[1,34]+ROlnk12_624*s.dpt[2,34]
+    RLlnk12_17 = ROlnk12_124*s.dpt[1,36]+ROlnk12_424*s.dpt[2,36]
+    RLlnk12_27 = ROlnk12_224*s.dpt[1,36]+ROlnk12_524*s.dpt[2,36]
+    RLlnk12_37 = ROlnk12_324*s.dpt[1,36]+ROlnk12_624*s.dpt[2,36]
     POlnk12_17 = POlnk12_12+RLlnk12_17
     POlnk12_27 = q[21]+RLlnk12_27
     POlnk12_37 = q[19]+RLlnk12_37
@@ -240,9 +240,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     OMlnk14_16 = qd[22]+qd[24]*S23
     OMlnk14_26 = OMlnk14_25+qd[24]*ROlnk14_823
     OMlnk14_36 = OMlnk14_35+qd[24]*ROlnk14_923
-    RLlnk14_17 = ROlnk14_424*s.dpt[2,39]
-    RLlnk14_27 = ROlnk14_524*s.dpt[2,39]
-    RLlnk14_37 = ROlnk14_624*s.dpt[2,39]
+    RLlnk14_17 = ROlnk14_424*s.dpt[2,41]
+    RLlnk14_27 = ROlnk14_524*s.dpt[2,41]
+    RLlnk14_37 = ROlnk14_624*s.dpt[2,41]
     POlnk14_17 = POlnk14_12+RLlnk14_17
     POlnk14_27 = q[21]+RLlnk14_27
     POlnk14_37 = q[19]+RLlnk14_37
@@ -276,9 +276,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     OMlnk16_16 = qd[22]+qd[24]*S23
     OMlnk16_26 = OMlnk16_25+qd[24]*ROlnk16_823
     OMlnk16_36 = OMlnk16_35+qd[24]*ROlnk16_923
-    RLlnk16_17 = ROlnk16_424*s.dpt[2,38]
-    RLlnk16_27 = ROlnk16_524*s.dpt[2,38]
-    RLlnk16_37 = ROlnk16_624*s.dpt[2,38]
+    RLlnk16_17 = ROlnk16_424*s.dpt[2,40]
+    RLlnk16_27 = ROlnk16_524*s.dpt[2,40]
+    RLlnk16_37 = ROlnk16_624*s.dpt[2,40]
     POlnk16_17 = POlnk16_12+RLlnk16_17
     POlnk16_27 = q[21]+RLlnk16_27
     POlnk16_37 = q[19]+RLlnk16_37
@@ -319,9 +319,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     fSlnk11 = Flink1*e11
     fSlnk21 = Flink1*(e21*C7+e31*S7)
     fSlnk31 = Flink1*(-e21*S7+e31*C7)
-    trqlnk7_1_1 = fSlnk21*s.dpt[3,17]-fSlnk31*s.dpt[2,17]
-    trqlnk7_1_2 = -fSlnk11*s.dpt[3,17]
-    trqlnk7_1_3 = fSlnk11*s.dpt[2,17]
+    trqlnk7_1_1 = fSlnk21*s.dpt[3,19]-fSlnk31*s.dpt[2,19]
+    trqlnk7_1_2 = -fSlnk11*s.dpt[3,19]
+    trqlnk7_1_3 = fSlnk11*s.dpt[2,19]
     fPlnk12 = Flink2*e12
     fPlnk22 = Flink2*e22
     fPlnk32 = Flink2*e32
@@ -334,9 +334,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     fSlnk12 = Flink2*e12
     fSlnk22 = Flink2*(e22*C13+e32*S13)
     fSlnk32 = Flink2*(-e22*S13+e32*C13)
-    trqlnk13_2_1 = fSlnk22*s.dpt[3,24]-fSlnk32*s.dpt[2,24]
-    trqlnk13_2_2 = -fSlnk12*s.dpt[3,24]
-    trqlnk13_2_3 = fSlnk12*s.dpt[2,24]
+    trqlnk13_2_1 = fSlnk22*s.dpt[3,26]-fSlnk32*s.dpt[2,26]
+    trqlnk13_2_2 = -fSlnk12*s.dpt[3,26]
+    trqlnk13_2_3 = fSlnk12*s.dpt[2,26]
     fPlnk13 = Flink3*e13
     fPlnk23 = Flink3*e23
     fPlnk33 = Flink3*e33
@@ -349,9 +349,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     fSlnk13 = Flink3*(ROlnk6_124*e13+ROlnk6_224*e23+ROlnk6_324*e33)
     fSlnk23 = Flink3*(ROlnk6_424*e13+ROlnk6_524*e23+ROlnk6_624*e33)
     fSlnk33 = Flink3*(ROlnk6_823*e23+ROlnk6_923*e33+e13*S23)
-    trqlnk24_3_1 = -fSlnk33*s.dpt[2,30]
-    trqlnk24_3_2 = fSlnk33*s.dpt[1,30]
-    trqlnk24_3_3 = fSlnk13*s.dpt[2,30]-fSlnk23*s.dpt[1,30]
+    trqlnk24_3_1 = -fSlnk33*s.dpt[2,32]
+    trqlnk24_3_2 = fSlnk33*s.dpt[1,32]
+    trqlnk24_3_3 = fSlnk13*s.dpt[2,32]-fSlnk23*s.dpt[1,32]
     fPlnk14 = Flink4*e14
     fPlnk24 = Flink4*e24
     fPlnk34 = Flink4*e34
@@ -367,9 +367,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     frclnk24_4_1 = -fSlnk13-fSlnk14
     frclnk24_4_2 = -fSlnk23-fSlnk24
     frclnk24_4_3 = -fSlnk33-fSlnk34
-    trqlnk24_4_1 = trqlnk24_3_1-fSlnk34*s.dpt[2,31]
-    trqlnk24_4_2 = trqlnk24_3_2+fSlnk34*s.dpt[1,31]
-    trqlnk24_4_3 = trqlnk24_3_3+fSlnk14*s.dpt[2,31]-fSlnk24*s.dpt[1,31]
+    trqlnk24_4_1 = trqlnk24_3_1-fSlnk34*s.dpt[2,33]
+    trqlnk24_4_2 = trqlnk24_3_2+fSlnk34*s.dpt[1,33]
+    trqlnk24_4_3 = trqlnk24_3_3+fSlnk14*s.dpt[2,33]-fSlnk24*s.dpt[1,33]
     fPlnk15 = Flink5*e15
     fPlnk25 = Flink5*e25
     fPlnk35 = Flink5*e35
@@ -385,9 +385,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     frclnk24_5_1 = -fSlnk15+frclnk24_4_1
     frclnk24_5_2 = -fSlnk25+frclnk24_4_2
     frclnk24_5_3 = -fSlnk35+frclnk24_4_3
-    trqlnk24_5_1 = trqlnk24_4_1-fSlnk35*s.dpt[2,33]
-    trqlnk24_5_2 = trqlnk24_4_2+fSlnk35*s.dpt[1,33]
-    trqlnk24_5_3 = trqlnk24_4_3+fSlnk15*s.dpt[2,33]-fSlnk25*s.dpt[1,33]
+    trqlnk24_5_1 = trqlnk24_4_1-fSlnk35*s.dpt[2,35]
+    trqlnk24_5_2 = trqlnk24_4_2+fSlnk35*s.dpt[1,35]
+    trqlnk24_5_3 = trqlnk24_4_3+fSlnk15*s.dpt[2,35]-fSlnk25*s.dpt[1,35]
     fPlnk16 = Flink6*e16
     fPlnk26 = Flink6*e26
     fPlnk36 = Flink6*e36
@@ -403,9 +403,9 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     frclnk24_6_1 = -fSlnk16+frclnk24_5_1
     frclnk24_6_2 = -fSlnk26+frclnk24_5_2
     frclnk24_6_3 = -fSlnk36+frclnk24_5_3
-    trqlnk24_6_1 = trqlnk24_5_1-fSlnk36*s.dpt[2,34]
-    trqlnk24_6_2 = trqlnk24_5_2+fSlnk36*s.dpt[1,34]
-    trqlnk24_6_3 = trqlnk24_5_3+fSlnk16*s.dpt[2,34]-fSlnk26*s.dpt[1,34]
+    trqlnk24_6_1 = trqlnk24_5_1-fSlnk36*s.dpt[2,36]
+    trqlnk24_6_2 = trqlnk24_5_2+fSlnk36*s.dpt[1,36]
+    trqlnk24_6_3 = trqlnk24_5_3+fSlnk16*s.dpt[2,36]-fSlnk26*s.dpt[1,36]
     fPlnk17 = Flink7*e17
     fPlnk27 = Flink7*e27
     fPlnk37 = Flink7*e37
@@ -421,8 +421,8 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     frclnk24_7_1 = -fSlnk17+frclnk24_6_1
     frclnk24_7_2 = -fSlnk27+frclnk24_6_2
     frclnk24_7_3 = -fSlnk37+frclnk24_6_3
-    trqlnk24_7_1 = trqlnk24_6_1-fSlnk37*s.dpt[2,39]
-    trqlnk24_7_3 = trqlnk24_6_3+fSlnk17*s.dpt[2,39]
+    trqlnk24_7_1 = trqlnk24_6_1-fSlnk37*s.dpt[2,41]
+    trqlnk24_7_3 = trqlnk24_6_3+fSlnk17*s.dpt[2,41]
     fPlnk18 = Flink8*e18
     fPlnk28 = Flink8*e28
     fPlnk38 = Flink8*e38
@@ -438,8 +438,8 @@ def link(frc, trq, Flink, Z, Zd, s, tsim):
     frclnk24_8_1 = -fSlnk18+frclnk24_7_1
     frclnk24_8_2 = -fSlnk28+frclnk24_7_2
     frclnk24_8_3 = -fSlnk38+frclnk24_7_3
-    trqlnk24_8_1 = trqlnk24_7_1-fSlnk38*s.dpt[2,38]
-    trqlnk24_8_3 = trqlnk24_7_3+fSlnk18*s.dpt[2,38]
+    trqlnk24_8_1 = trqlnk24_7_1-fSlnk38*s.dpt[2,40]
+    trqlnk24_8_3 = trqlnk24_7_3+fSlnk18*s.dpt[2,40]
  
 # Symbolic model output
 

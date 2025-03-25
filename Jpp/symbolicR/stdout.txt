@@ -1,7 +1,7 @@
 
 ##############################################################
-#	file6.gen 24/03/2025 20:40:33    messages
+#	file1b.gen 25/03/2025 21:56:40    messages
 ##############################################################
-Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file6.gen
+Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file1b.gen
 Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
-F27 - Link Forces (3D)
+F6 - Sensors Kinematics

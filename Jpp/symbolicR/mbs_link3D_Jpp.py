@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Mon Mar 24 20:40:33 2025
+#	==> Generation Date: Tue Mar 25 21:58:23 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Jpp
 #
-#	==> Number of joints: 28
+#	==> Number of joints: 30
 #
 #	==> Function: F27 - Link Forces (3D)
 #

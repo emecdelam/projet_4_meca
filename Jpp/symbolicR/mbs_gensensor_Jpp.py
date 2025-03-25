@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Mon Mar 24 20:40:33 2025
+#	==> Generation Date: Tue Mar 25 21:58:23 2025
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Jpp
 #
-#	==> Number of joints: 28
+#	==> Number of joints: 30
 #
 #	==> Function: F6 - Sensors Kinematics
 #
@@ -79,6 +79,10 @@ def sensor(sens, s, isens):
   C27 = cos(q[27])
   S28 = sin(q[28])
   C28 = cos(q[28])
+  S29 = sin(q[29])
+  C29 = cos(q[29])
+  S30 = sin(q[30])
+  C30 = cos(q[30])
  
 # Augmented Joint Position Vectors
 
@@ -439,9 +443,9 @@ def sensor(sens, s, isens):
     ACcp8_17 = qdd[3]+OMcp8_26*ORcp8_37-OMcp8_36*ORcp8_27+OPcp8_26*RLcp8_37-OPcp8_36*RLcp8_27
     ACcp8_27 = qdd[2]-OMcp8_16*ORcp8_37+OMcp8_36*ORcp8_17-OPcp8_16*RLcp8_37+OPcp8_36*RLcp8_17
     ACcp8_37 = qdd[1]+OMcp8_16*ORcp8_27-OMcp8_26*ORcp8_17+OPcp8_16*RLcp8_27-OPcp8_26*RLcp8_17
-    RLcp8_18 = ROcp8_47*s.dpt[2,16]
-    RLcp8_28 = ROcp8_57*s.dpt[2,16]
-    RLcp8_38 = ROcp8_67*s.dpt[2,16]
+    RLcp8_18 = ROcp8_47*s.dpt[2,18]
+    RLcp8_28 = ROcp8_57*s.dpt[2,18]
+    RLcp8_38 = ROcp8_67*s.dpt[2,18]
     POcp8_18 = POcp8_17+RLcp8_18
     POcp8_28 = POcp8_27+RLcp8_28
     POcp8_38 = POcp8_37+RLcp8_38
@@ -589,9 +593,9 @@ def sensor(sens, s, isens):
     ACcp9_17 = qdd[3]+OMcp9_26*ORcp9_37-OMcp9_36*ORcp9_27+OPcp9_26*RLcp9_37-OPcp9_36*RLcp9_27
     ACcp9_27 = qdd[2]-OMcp9_16*ORcp9_37+OMcp9_36*ORcp9_17-OPcp9_16*RLcp9_37+OPcp9_36*RLcp9_17
     ACcp9_37 = qdd[1]+OMcp9_16*ORcp9_27-OMcp9_26*ORcp9_17+OPcp9_16*RLcp9_27-OPcp9_26*RLcp9_17
-    RLcp9_18 = ROcp9_47*s.dpt[2,16]
-    RLcp9_28 = ROcp9_57*s.dpt[2,16]
-    RLcp9_38 = ROcp9_67*s.dpt[2,16]
+    RLcp9_18 = ROcp9_47*s.dpt[2,18]
+    RLcp9_28 = ROcp9_57*s.dpt[2,18]
+    RLcp9_38 = ROcp9_67*s.dpt[2,18]
     POcp9_18 = POcp9_17+RLcp9_18
     POcp9_28 = POcp9_27+RLcp9_28
     POcp9_38 = POcp9_37+RLcp9_38
@@ -754,9 +758,9 @@ def sensor(sens, s, isens):
     ACcp10_17 = qdd[3]+OMcp10_26*ORcp10_37-OMcp10_36*ORcp10_27+OPcp10_26*RLcp10_37-OPcp10_36*RLcp10_27
     ACcp10_27 = qdd[2]-OMcp10_16*ORcp10_37+OMcp10_36*ORcp10_17-OPcp10_16*RLcp10_37+OPcp10_36*RLcp10_17
     ACcp10_37 = qdd[1]+OMcp10_16*ORcp10_27-OMcp10_26*ORcp10_17+OPcp10_16*RLcp10_27-OPcp10_26*RLcp10_17
-    RLcp10_18 = ROcp10_47*s.dpt[2,16]
-    RLcp10_28 = ROcp10_57*s.dpt[2,16]
-    RLcp10_38 = ROcp10_67*s.dpt[2,16]
+    RLcp10_18 = ROcp10_47*s.dpt[2,18]
+    RLcp10_28 = ROcp10_57*s.dpt[2,18]
+    RLcp10_38 = ROcp10_67*s.dpt[2,18]
     POcp10_18 = POcp10_17+RLcp10_18
     POcp10_28 = POcp10_27+RLcp10_28
     POcp10_38 = POcp10_37+RLcp10_38
@@ -792,9 +796,9 @@ def sensor(sens, s, isens):
     OPcp10_19 = OPcp10_18+ROcp10_78*qdd[9]+qd[9]*(OMcp10_28*ROcp10_98-OMcp10_38*ROcp10_88)
     OPcp10_29 = OPcp10_28+ROcp10_88*qdd[9]+qd[9]*(-OMcp10_18*ROcp10_98+OMcp10_38*ROcp10_78)
     OPcp10_39 = OPcp10_38+ROcp10_98*qdd[9]+qd[9]*(OMcp10_18*ROcp10_88-OMcp10_28*ROcp10_78)
-    RLcp10_110 = ROcp10_49*s.dpt[2,19]+ROcp10_78*s.dpt[3,19]
-    RLcp10_210 = ROcp10_59*s.dpt[2,19]+ROcp10_88*s.dpt[3,19]
-    RLcp10_310 = ROcp10_69*s.dpt[2,19]+ROcp10_98*s.dpt[3,19]
+    RLcp10_110 = ROcp10_49*s.dpt[2,21]+ROcp10_78*s.dpt[3,21]
+    RLcp10_210 = ROcp10_59*s.dpt[2,21]+ROcp10_88*s.dpt[3,21]
+    RLcp10_310 = ROcp10_69*s.dpt[2,21]+ROcp10_98*s.dpt[3,21]
     POcp10_110 = POcp10_18+RLcp10_110
     POcp10_210 = POcp10_28+RLcp10_210
     POcp10_310 = POcp10_38+RLcp10_310
@@ -972,9 +976,9 @@ def sensor(sens, s, isens):
     ACcp11_17 = qdd[3]+OMcp11_26*ORcp11_37-OMcp11_36*ORcp11_27+OPcp11_26*RLcp11_37-OPcp11_36*RLcp11_27
     ACcp11_27 = qdd[2]-OMcp11_16*ORcp11_37+OMcp11_36*ORcp11_17-OPcp11_16*RLcp11_37+OPcp11_36*RLcp11_17
     ACcp11_37 = qdd[1]+OMcp11_16*ORcp11_27-OMcp11_26*ORcp11_17+OPcp11_16*RLcp11_27-OPcp11_26*RLcp11_17
-    RLcp11_18 = ROcp11_47*s.dpt[2,16]
-    RLcp11_28 = ROcp11_57*s.dpt[2,16]
-    RLcp11_38 = ROcp11_67*s.dpt[2,16]
+    RLcp11_18 = ROcp11_47*s.dpt[2,18]
+    RLcp11_28 = ROcp11_57*s.dpt[2,18]
+    RLcp11_38 = ROcp11_67*s.dpt[2,18]
     POcp11_18 = POcp11_17+RLcp11_18
     POcp11_28 = POcp11_27+RLcp11_28
     POcp11_38 = POcp11_37+RLcp11_38
@@ -1010,9 +1014,9 @@ def sensor(sens, s, isens):
     OPcp11_19 = OPcp11_18+ROcp11_78*qdd[9]+qd[9]*(OMcp11_28*ROcp11_98-OMcp11_38*ROcp11_88)
     OPcp11_29 = OPcp11_28+ROcp11_88*qdd[9]+qd[9]*(-OMcp11_18*ROcp11_98+OMcp11_38*ROcp11_78)
     OPcp11_39 = OPcp11_38+ROcp11_98*qdd[9]+qd[9]*(OMcp11_18*ROcp11_88-OMcp11_28*ROcp11_78)
-    RLcp11_110 = ROcp11_49*s.dpt[2,19]+ROcp11_78*s.dpt[3,19]
-    RLcp11_210 = ROcp11_59*s.dpt[2,19]+ROcp11_88*s.dpt[3,19]
-    RLcp11_310 = ROcp11_69*s.dpt[2,19]+ROcp11_98*s.dpt[3,19]
+    RLcp11_110 = ROcp11_49*s.dpt[2,21]+ROcp11_78*s.dpt[3,21]
+    RLcp11_210 = ROcp11_59*s.dpt[2,21]+ROcp11_88*s.dpt[3,21]
+    RLcp11_310 = ROcp11_69*s.dpt[2,21]+ROcp11_98*s.dpt[3,21]
     POcp11_110 = POcp11_18+RLcp11_110
     POcp11_210 = POcp11_28+RLcp11_210
     POcp11_310 = POcp11_38+RLcp11_310
@@ -1381,9 +1385,9 @@ def sensor(sens, s, isens):
     ACcp14_17 = qdd[3]+OMcp14_26*ORcp14_37-OMcp14_36*ORcp14_27+OPcp14_26*RLcp14_37-OPcp14_36*RLcp14_27
     ACcp14_27 = qdd[2]-OMcp14_16*ORcp14_37+OMcp14_36*ORcp14_17-OPcp14_16*RLcp14_37+OPcp14_36*RLcp14_17
     ACcp14_37 = qdd[1]+OMcp14_16*ORcp14_27-OMcp14_26*ORcp14_17+OPcp14_16*RLcp14_27-OPcp14_26*RLcp14_17
-    RLcp14_18 = ROcp14_413*s.dpt[2,23]
-    RLcp14_28 = ROcp14_513*s.dpt[2,23]
-    RLcp14_38 = ROcp14_613*s.dpt[2,23]
+    RLcp14_18 = ROcp14_413*s.dpt[2,25]
+    RLcp14_28 = ROcp14_513*s.dpt[2,25]
+    RLcp14_38 = ROcp14_613*s.dpt[2,25]
     POcp14_18 = POcp14_17+RLcp14_18
     POcp14_28 = POcp14_27+RLcp14_28
     POcp14_38 = POcp14_37+RLcp14_38
@@ -1531,9 +1535,9 @@ def sensor(sens, s, isens):
     ACcp15_17 = qdd[3]+OMcp15_26*ORcp15_37-OMcp15_36*ORcp15_27+OPcp15_26*RLcp15_37-OPcp15_36*RLcp15_27
     ACcp15_27 = qdd[2]-OMcp15_16*ORcp15_37+OMcp15_36*ORcp15_17-OPcp15_16*RLcp15_37+OPcp15_36*RLcp15_17
     ACcp15_37 = qdd[1]+OMcp15_16*ORcp15_27-OMcp15_26*ORcp15_17+OPcp15_16*RLcp15_27-OPcp15_26*RLcp15_17
-    RLcp15_18 = ROcp15_413*s.dpt[2,23]
-    RLcp15_28 = ROcp15_513*s.dpt[2,23]
-    RLcp15_38 = ROcp15_613*s.dpt[2,23]
+    RLcp15_18 = ROcp15_413*s.dpt[2,25]
+    RLcp15_28 = ROcp15_513*s.dpt[2,25]
+    RLcp15_38 = ROcp15_613*s.dpt[2,25]
     POcp15_18 = POcp15_17+RLcp15_18
     POcp15_28 = POcp15_27+RLcp15_28
     POcp15_38 = POcp15_37+RLcp15_38
@@ -1696,9 +1700,9 @@ def sensor(sens, s, isens):
     ACcp16_17 = qdd[3]+OMcp16_26*ORcp16_37-OMcp16_36*ORcp16_27+OPcp16_26*RLcp16_37-OPcp16_36*RLcp16_27
     ACcp16_27 = qdd[2]-OMcp16_16*ORcp16_37+OMcp16_36*ORcp16_17-OPcp16_16*RLcp16_37+OPcp16_36*RLcp16_17
     ACcp16_37 = qdd[1]+OMcp16_16*ORcp16_27-OMcp16_26*ORcp16_17+OPcp16_16*RLcp16_27-OPcp16_26*RLcp16_17
-    RLcp16_18 = ROcp16_413*s.dpt[2,23]
-    RLcp16_28 = ROcp16_513*s.dpt[2,23]
-    RLcp16_38 = ROcp16_613*s.dpt[2,23]
+    RLcp16_18 = ROcp16_413*s.dpt[2,25]
+    RLcp16_28 = ROcp16_513*s.dpt[2,25]
+    RLcp16_38 = ROcp16_613*s.dpt[2,25]
     POcp16_18 = POcp16_17+RLcp16_18
     POcp16_28 = POcp16_27+RLcp16_28
     POcp16_38 = POcp16_37+RLcp16_38
@@ -1734,9 +1738,9 @@ def sensor(sens, s, isens):
     OPcp16_19 = OPcp16_18+ROcp16_714*qdd[15]+qd[15]*(OMcp16_28*ROcp16_914-OMcp16_38*ROcp16_814)
     OPcp16_29 = OPcp16_28+ROcp16_814*qdd[15]+qd[15]*(-OMcp16_18*ROcp16_914+OMcp16_38*ROcp16_714)
     OPcp16_39 = OPcp16_38+ROcp16_914*qdd[15]+qd[15]*(OMcp16_18*ROcp16_814-OMcp16_28*ROcp16_714)
-    RLcp16_110 = ROcp16_415*s.dpt[2,26]+ROcp16_714*s.dpt[3,26]
-    RLcp16_210 = ROcp16_515*s.dpt[2,26]+ROcp16_814*s.dpt[3,26]
-    RLcp16_310 = ROcp16_615*s.dpt[2,26]+ROcp16_914*s.dpt[3,26]
+    RLcp16_110 = ROcp16_415*s.dpt[2,28]+ROcp16_714*s.dpt[3,28]
+    RLcp16_210 = ROcp16_515*s.dpt[2,28]+ROcp16_814*s.dpt[3,28]
+    RLcp16_310 = ROcp16_615*s.dpt[2,28]+ROcp16_914*s.dpt[3,28]
     POcp16_110 = POcp16_18+RLcp16_110
     POcp16_210 = POcp16_28+RLcp16_210
     POcp16_310 = POcp16_38+RLcp16_310
@@ -1914,9 +1918,9 @@ def sensor(sens, s, isens):
     ACcp17_17 = qdd[3]+OMcp17_26*ORcp17_37-OMcp17_36*ORcp17_27+OPcp17_26*RLcp17_37-OPcp17_36*RLcp17_27
     ACcp17_27 = qdd[2]-OMcp17_16*ORcp17_37+OMcp17_36*ORcp17_17-OPcp17_16*RLcp17_37+OPcp17_36*RLcp17_17
     ACcp17_37 = qdd[1]+OMcp17_16*ORcp17_27-OMcp17_26*ORcp17_17+OPcp17_16*RLcp17_27-OPcp17_26*RLcp17_17
-    RLcp17_18 = ROcp17_413*s.dpt[2,23]
-    RLcp17_28 = ROcp17_513*s.dpt[2,23]
-    RLcp17_38 = ROcp17_613*s.dpt[2,23]
+    RLcp17_18 = ROcp17_413*s.dpt[2,25]
+    RLcp17_28 = ROcp17_513*s.dpt[2,25]
+    RLcp17_38 = ROcp17_613*s.dpt[2,25]
     POcp17_18 = POcp17_17+RLcp17_18
     POcp17_28 = POcp17_27+RLcp17_28
     POcp17_38 = POcp17_37+RLcp17_38
@@ -1952,9 +1956,9 @@ def sensor(sens, s, isens):
     OPcp17_19 = OPcp17_18+ROcp17_714*qdd[15]+qd[15]*(OMcp17_28*ROcp17_914-OMcp17_38*ROcp17_814)
     OPcp17_29 = OPcp17_28+ROcp17_814*qdd[15]+qd[15]*(-OMcp17_18*ROcp17_914+OMcp17_38*ROcp17_714)
     OPcp17_39 = OPcp17_38+ROcp17_914*qdd[15]+qd[15]*(OMcp17_18*ROcp17_814-OMcp17_28*ROcp17_714)
-    RLcp17_110 = ROcp17_415*s.dpt[2,26]+ROcp17_714*s.dpt[3,26]
-    RLcp17_210 = ROcp17_515*s.dpt[2,26]+ROcp17_814*s.dpt[3,26]
-    RLcp17_310 = ROcp17_615*s.dpt[2,26]+ROcp17_914*s.dpt[3,26]
+    RLcp17_110 = ROcp17_415*s.dpt[2,28]+ROcp17_714*s.dpt[3,28]
+    RLcp17_210 = ROcp17_515*s.dpt[2,28]+ROcp17_814*s.dpt[3,28]
+    RLcp17_310 = ROcp17_615*s.dpt[2,28]+ROcp17_914*s.dpt[3,28]
     POcp17_110 = POcp17_18+RLcp17_110
     POcp17_210 = POcp17_28+RLcp17_210
     POcp17_310 = POcp17_38+RLcp17_310
@@ -3145,9 +3149,9 @@ def sensor(sens, s, isens):
     OPcp25_112 = OPcp25_111+ROcp25_723*qdd[24]+qd[24]*(OMcp25_211*ROcp25_923-OMcp25_311*ROcp25_823)
     OPcp25_212 = OPcp25_211+ROcp25_823*qdd[24]+qd[24]*(-OMcp25_111*ROcp25_923+OMcp25_311*ROcp25_723)
     OPcp25_312 = OPcp25_311+ROcp25_923*qdd[24]+qd[24]*(OMcp25_111*ROcp25_823-OMcp25_211*ROcp25_723)
-    RLcp25_113 = ROcp25_424*s.dpt[2,32]+ROcp25_723*s.dpt[3,32]
-    RLcp25_213 = ROcp25_524*s.dpt[2,32]+ROcp25_823*s.dpt[3,32]
-    RLcp25_313 = ROcp25_624*s.dpt[2,32]+ROcp25_923*s.dpt[3,32]
+    RLcp25_113 = ROcp25_424*s.dpt[2,34]+ROcp25_723*s.dpt[3,34]
+    RLcp25_213 = ROcp25_524*s.dpt[2,34]+ROcp25_823*s.dpt[3,34]
+    RLcp25_313 = ROcp25_624*s.dpt[2,34]+ROcp25_923*s.dpt[3,34]
     POcp25_113 = POcp25_19+RLcp25_113
     POcp25_213 = POcp25_29+RLcp25_213
     POcp25_313 = POcp25_39+RLcp25_313
@@ -3386,9 +3390,9 @@ def sensor(sens, s, isens):
     OPcp26_112 = OPcp26_111+ROcp26_723*qdd[24]+qd[24]*(OMcp26_211*ROcp26_923-OMcp26_311*ROcp26_823)
     OPcp26_212 = OPcp26_211+ROcp26_823*qdd[24]+qd[24]*(-OMcp26_111*ROcp26_923+OMcp26_311*ROcp26_723)
     OPcp26_312 = OPcp26_311+ROcp26_923*qdd[24]+qd[24]*(OMcp26_111*ROcp26_823-OMcp26_211*ROcp26_723)
-    RLcp26_113 = ROcp26_424*s.dpt[2,35]+ROcp26_723*s.dpt[3,35]
-    RLcp26_213 = ROcp26_524*s.dpt[2,35]+ROcp26_823*s.dpt[3,35]
-    RLcp26_313 = ROcp26_624*s.dpt[2,35]+ROcp26_923*s.dpt[3,35]
+    RLcp26_113 = ROcp26_424*s.dpt[2,37]+ROcp26_723*s.dpt[3,37]
+    RLcp26_213 = ROcp26_524*s.dpt[2,37]+ROcp26_823*s.dpt[3,37]
+    RLcp26_313 = ROcp26_624*s.dpt[2,37]+ROcp26_923*s.dpt[3,37]
     POcp26_113 = POcp26_19+RLcp26_113
     POcp26_213 = POcp26_29+RLcp26_213
     POcp26_313 = POcp26_39+RLcp26_313
@@ -3627,9 +3631,9 @@ def sensor(sens, s, isens):
     OPcp27_112 = OPcp27_111+ROcp27_723*qdd[24]+qd[24]*(OMcp27_211*ROcp27_923-OMcp27_311*ROcp27_823)
     OPcp27_212 = OPcp27_211+ROcp27_823*qdd[24]+qd[24]*(-OMcp27_111*ROcp27_923+OMcp27_311*ROcp27_723)
     OPcp27_312 = OPcp27_311+ROcp27_923*qdd[24]+qd[24]*(OMcp27_111*ROcp27_823-OMcp27_211*ROcp27_723)
-    RLcp27_113 = ROcp27_424*s.dpt[2,36]
-    RLcp27_213 = ROcp27_524*s.dpt[2,36]
-    RLcp27_313 = ROcp27_624*s.dpt[2,36]
+    RLcp27_113 = ROcp27_424*s.dpt[2,38]
+    RLcp27_213 = ROcp27_524*s.dpt[2,38]
+    RLcp27_313 = ROcp27_624*s.dpt[2,38]
     POcp27_113 = POcp27_19+RLcp27_113
     POcp27_213 = POcp27_29+RLcp27_213
     POcp27_313 = POcp27_39+RLcp27_313
@@ -3868,9 +3872,9 @@ def sensor(sens, s, isens):
     OPcp28_112 = OPcp28_111+ROcp28_723*qdd[24]+qd[24]*(OMcp28_211*ROcp28_923-OMcp28_311*ROcp28_823)
     OPcp28_212 = OPcp28_211+ROcp28_823*qdd[24]+qd[24]*(-OMcp28_111*ROcp28_923+OMcp28_311*ROcp28_723)
     OPcp28_312 = OPcp28_311+ROcp28_923*qdd[24]+qd[24]*(OMcp28_111*ROcp28_823-OMcp28_211*ROcp28_723)
-    RLcp28_113 = ROcp28_424*s.dpt[2,37]
-    RLcp28_213 = ROcp28_524*s.dpt[2,37]
-    RLcp28_313 = ROcp28_624*s.dpt[2,37]
+    RLcp28_113 = ROcp28_424*s.dpt[2,39]
+    RLcp28_213 = ROcp28_524*s.dpt[2,39]
+    RLcp28_313 = ROcp28_624*s.dpt[2,39]
     POcp28_113 = POcp28_19+RLcp28_113
     POcp28_213 = POcp28_29+RLcp28_213
     POcp28_313 = POcp28_39+RLcp28_313
@@ -3977,6 +3981,206 @@ def sensor(sens, s, isens):
     sens.OMP[1] = OPcp28_113
     sens.OMP[2] = OPcp28_213
     sens.OMP[3] = OPcp28_313
+
+  if (isens == 29): 
+
+    ROcp29_45 = -S4*C5
+    ROcp29_55 = C4*C5
+    ROcp29_75 = S4*S5
+    ROcp29_85 = -C4*S5
+    ROcp29_16 = -ROcp29_75*S6+C4*C6
+    ROcp29_26 = -ROcp29_85*S6+S4*C6
+    ROcp29_36 = -C5*S6
+    ROcp29_76 = ROcp29_75*C6+C4*S6
+    ROcp29_86 = ROcp29_85*C6+S4*S6
+    ROcp29_96 = C5*C6
+    ROcp29_129 = ROcp29_16*C29+ROcp29_45*S29
+    ROcp29_229 = ROcp29_26*C29+ROcp29_55*S29
+    ROcp29_329 = ROcp29_36*C29+S29*S5
+    ROcp29_429 = -ROcp29_16*S29+ROcp29_45*C29
+    ROcp29_529 = -ROcp29_26*S29+ROcp29_55*C29
+    ROcp29_629 = -ROcp29_36*S29+C29*S5
+    OMcp29_15 = qd[5]*C4
+    OMcp29_25 = qd[5]*S4
+    OPcp29_15 = qdd[5]*C4-qd[4]*qd[5]*S4
+    OPcp29_25 = qdd[5]*S4+qd[4]*qd[5]*C4
+    OMcp29_16 = OMcp29_15+ROcp29_45*qd[6]
+    OMcp29_26 = OMcp29_25+ROcp29_55*qd[6]
+    OMcp29_36 = qd[4]+qd[6]*S5
+    OPcp29_16 = OPcp29_15+ROcp29_45*qdd[6]+qd[6]*(OMcp29_25*S5-ROcp29_55*qd[4])
+    OPcp29_26 = OPcp29_25+ROcp29_55*qdd[6]+qd[6]*(-OMcp29_15*S5+ROcp29_45*qd[4])
+    OPcp29_36 = qdd[4]+qdd[6]*S5+qd[6]*(OMcp29_15*ROcp29_55-OMcp29_25*ROcp29_45)
+    RLcp29_17 = ROcp29_16*s.dpt[1,16]+ROcp29_45*s.dpt[2,16]
+    RLcp29_27 = ROcp29_26*s.dpt[1,16]+ROcp29_55*s.dpt[2,16]
+    RLcp29_37 = ROcp29_36*s.dpt[1,16]+s.dpt[2,16]*S5
+    POcp29_17 = RLcp29_17+q[3]
+    POcp29_27 = RLcp29_27+q[2]
+    POcp29_37 = RLcp29_37+q[1]
+    JTcp29_17_5 = RLcp29_37*S4
+    JTcp29_27_5 = -RLcp29_37*C4
+    JTcp29_37_5 = -RLcp29_17*S4+RLcp29_27*C4
+    JTcp29_17_6 = -RLcp29_27*S5+RLcp29_37*ROcp29_55
+    JTcp29_27_6 = RLcp29_17*S5-RLcp29_37*ROcp29_45
+    JTcp29_37_6 = -RLcp29_17*ROcp29_55+RLcp29_27*ROcp29_45
+    OMcp29_17 = OMcp29_16+ROcp29_76*qd[29]
+    OMcp29_27 = OMcp29_26+ROcp29_86*qd[29]
+    OMcp29_37 = OMcp29_36+ROcp29_96*qd[29]
+    ORcp29_17 = OMcp29_26*RLcp29_37-OMcp29_36*RLcp29_27
+    ORcp29_27 = -OMcp29_16*RLcp29_37+OMcp29_36*RLcp29_17
+    ORcp29_37 = OMcp29_16*RLcp29_27-OMcp29_26*RLcp29_17
+    VIcp29_17 = ORcp29_17+qd[3]
+    VIcp29_27 = ORcp29_27+qd[2]
+    VIcp29_37 = ORcp29_37+qd[1]
+    OPcp29_17 = OPcp29_16+ROcp29_76*qdd[29]+qd[29]*(OMcp29_26*ROcp29_96-OMcp29_36*ROcp29_86)
+    OPcp29_27 = OPcp29_26+ROcp29_86*qdd[29]+qd[29]*(-OMcp29_16*ROcp29_96+OMcp29_36*ROcp29_76)
+    OPcp29_37 = OPcp29_36+ROcp29_96*qdd[29]+qd[29]*(OMcp29_16*ROcp29_86-OMcp29_26*ROcp29_76)
+    ACcp29_17 = qdd[3]+OMcp29_26*ORcp29_37-OMcp29_36*ORcp29_27+OPcp29_26*RLcp29_37-OPcp29_36*RLcp29_27
+    ACcp29_27 = qdd[2]-OMcp29_16*ORcp29_37+OMcp29_36*ORcp29_17-OPcp29_16*RLcp29_37+OPcp29_36*RLcp29_17
+    ACcp29_37 = qdd[1]+OMcp29_16*ORcp29_27-OMcp29_26*ORcp29_17+OPcp29_16*RLcp29_27-OPcp29_26*RLcp29_17
+    sens.P[1] = POcp29_17
+    sens.P[2] = POcp29_27
+    sens.P[3] = POcp29_37
+    sens.R[1,1] = ROcp29_129
+    sens.R[1,2] = ROcp29_229
+    sens.R[1,3] = ROcp29_329
+    sens.R[2,1] = ROcp29_429
+    sens.R[2,2] = ROcp29_529
+    sens.R[2,3] = ROcp29_629
+    sens.R[3,1] = ROcp29_76
+    sens.R[3,2] = ROcp29_86
+    sens.R[3,3] = ROcp29_96
+    sens.V[1] = VIcp29_17
+    sens.V[2] = VIcp29_27
+    sens.V[3] = VIcp29_37
+    sens.OM[1] = OMcp29_17
+    sens.OM[2] = OMcp29_27
+    sens.OM[3] = OMcp29_37
+    sens.J[1,3] = (1.0)
+    sens.J[1,4] = -RLcp29_27
+    sens.J[1,5] = JTcp29_17_5
+    sens.J[1,6] = JTcp29_17_6
+    sens.J[2,2] = (1.0)
+    sens.J[2,4] = RLcp29_17
+    sens.J[2,5] = JTcp29_27_5
+    sens.J[2,6] = JTcp29_27_6
+    sens.J[3,1] = (1.0)
+    sens.J[3,5] = JTcp29_37_5
+    sens.J[3,6] = JTcp29_37_6
+    sens.J[4,5] = C4
+    sens.J[4,6] = ROcp29_45
+    sens.J[4,29] = ROcp29_76
+    sens.J[5,5] = S4
+    sens.J[5,6] = ROcp29_55
+    sens.J[5,29] = ROcp29_86
+    sens.J[6,4] = (1.0)
+    sens.J[6,6] = S5
+    sens.J[6,29] = ROcp29_96
+    sens.A[1] = ACcp29_17
+    sens.A[2] = ACcp29_27
+    sens.A[3] = ACcp29_37
+    sens.OMP[1] = OPcp29_17
+    sens.OMP[2] = OPcp29_27
+    sens.OMP[3] = OPcp29_37
+
+  if (isens == 30): 
+
+    ROcp30_45 = -S4*C5
+    ROcp30_55 = C4*C5
+    ROcp30_75 = S4*S5
+    ROcp30_85 = -C4*S5
+    ROcp30_16 = -ROcp30_75*S6+C4*C6
+    ROcp30_26 = -ROcp30_85*S6+S4*C6
+    ROcp30_36 = -C5*S6
+    ROcp30_76 = ROcp30_75*C6+C4*S6
+    ROcp30_86 = ROcp30_85*C6+S4*S6
+    ROcp30_96 = C5*C6
+    ROcp30_130 = ROcp30_16*C30+ROcp30_45*S30
+    ROcp30_230 = ROcp30_26*C30+ROcp30_55*S30
+    ROcp30_330 = ROcp30_36*C30+S30*S5
+    ROcp30_430 = -ROcp30_16*S30+ROcp30_45*C30
+    ROcp30_530 = -ROcp30_26*S30+ROcp30_55*C30
+    ROcp30_630 = -ROcp30_36*S30+C30*S5
+    OMcp30_15 = qd[5]*C4
+    OMcp30_25 = qd[5]*S4
+    OPcp30_15 = qdd[5]*C4-qd[4]*qd[5]*S4
+    OPcp30_25 = qdd[5]*S4+qd[4]*qd[5]*C4
+    OMcp30_16 = OMcp30_15+ROcp30_45*qd[6]
+    OMcp30_26 = OMcp30_25+ROcp30_55*qd[6]
+    OMcp30_36 = qd[4]+qd[6]*S5
+    OPcp30_16 = OPcp30_15+ROcp30_45*qdd[6]+qd[6]*(OMcp30_25*S5-ROcp30_55*qd[4])
+    OPcp30_26 = OPcp30_25+ROcp30_55*qdd[6]+qd[6]*(-OMcp30_15*S5+ROcp30_45*qd[4])
+    OPcp30_36 = qdd[4]+qdd[6]*S5+qd[6]*(OMcp30_15*ROcp30_55-OMcp30_25*ROcp30_45)
+    RLcp30_17 = ROcp30_16*s.dpt[1,17]+ROcp30_45*s.dpt[2,17]
+    RLcp30_27 = ROcp30_26*s.dpt[1,17]+ROcp30_55*s.dpt[2,17]
+    RLcp30_37 = ROcp30_36*s.dpt[1,17]+s.dpt[2,17]*S5
+    POcp30_17 = RLcp30_17+q[3]
+    POcp30_27 = RLcp30_27+q[2]
+    POcp30_37 = RLcp30_37+q[1]
+    JTcp30_17_5 = RLcp30_37*S4
+    JTcp30_27_5 = -RLcp30_37*C4
+    JTcp30_37_5 = -RLcp30_17*S4+RLcp30_27*C4
+    JTcp30_17_6 = -RLcp30_27*S5+RLcp30_37*ROcp30_55
+    JTcp30_27_6 = RLcp30_17*S5-RLcp30_37*ROcp30_45
+    JTcp30_37_6 = -RLcp30_17*ROcp30_55+RLcp30_27*ROcp30_45
+    OMcp30_17 = OMcp30_16+ROcp30_76*qd[30]
+    OMcp30_27 = OMcp30_26+ROcp30_86*qd[30]
+    OMcp30_37 = OMcp30_36+ROcp30_96*qd[30]
+    ORcp30_17 = OMcp30_26*RLcp30_37-OMcp30_36*RLcp30_27
+    ORcp30_27 = -OMcp30_16*RLcp30_37+OMcp30_36*RLcp30_17
+    ORcp30_37 = OMcp30_16*RLcp30_27-OMcp30_26*RLcp30_17
+    VIcp30_17 = ORcp30_17+qd[3]
+    VIcp30_27 = ORcp30_27+qd[2]
+    VIcp30_37 = ORcp30_37+qd[1]
+    OPcp30_17 = OPcp30_16+ROcp30_76*qdd[30]+qd[30]*(OMcp30_26*ROcp30_96-OMcp30_36*ROcp30_86)
+    OPcp30_27 = OPcp30_26+ROcp30_86*qdd[30]+qd[30]*(-OMcp30_16*ROcp30_96+OMcp30_36*ROcp30_76)
+    OPcp30_37 = OPcp30_36+ROcp30_96*qdd[30]+qd[30]*(OMcp30_16*ROcp30_86-OMcp30_26*ROcp30_76)
+    ACcp30_17 = qdd[3]+OMcp30_26*ORcp30_37-OMcp30_36*ORcp30_27+OPcp30_26*RLcp30_37-OPcp30_36*RLcp30_27
+    ACcp30_27 = qdd[2]-OMcp30_16*ORcp30_37+OMcp30_36*ORcp30_17-OPcp30_16*RLcp30_37+OPcp30_36*RLcp30_17
+    ACcp30_37 = qdd[1]+OMcp30_16*ORcp30_27-OMcp30_26*ORcp30_17+OPcp30_16*RLcp30_27-OPcp30_26*RLcp30_17
+    sens.P[1] = POcp30_17
+    sens.P[2] = POcp30_27
+    sens.P[3] = POcp30_37
+    sens.R[1,1] = ROcp30_130
+    sens.R[1,2] = ROcp30_230
+    sens.R[1,3] = ROcp30_330
+    sens.R[2,1] = ROcp30_430
+    sens.R[2,2] = ROcp30_530
+    sens.R[2,3] = ROcp30_630
+    sens.R[3,1] = ROcp30_76
+    sens.R[3,2] = ROcp30_86
+    sens.R[3,3] = ROcp30_96
+    sens.V[1] = VIcp30_17
+    sens.V[2] = VIcp30_27
+    sens.V[3] = VIcp30_37
+    sens.OM[1] = OMcp30_17
+    sens.OM[2] = OMcp30_27
+    sens.OM[3] = OMcp30_37
+    sens.J[1,3] = (1.0)
+    sens.J[1,4] = -RLcp30_27
+    sens.J[1,5] = JTcp30_17_5
+    sens.J[1,6] = JTcp30_17_6
+    sens.J[2,2] = (1.0)
+    sens.J[2,4] = RLcp30_17
+    sens.J[2,5] = JTcp30_27_5
+    sens.J[2,6] = JTcp30_27_6
+    sens.J[3,1] = (1.0)
+    sens.J[3,5] = JTcp30_37_5
+    sens.J[3,6] = JTcp30_37_6
+    sens.J[4,5] = C4
+    sens.J[4,6] = ROcp30_45
+    sens.J[4,30] = ROcp30_76
+    sens.J[5,5] = S4
+    sens.J[5,6] = ROcp30_55
+    sens.J[5,30] = ROcp30_86
+    sens.J[6,4] = (1.0)
+    sens.J[6,6] = S5
+    sens.J[6,30] = ROcp30_96
+    sens.A[1] = ACcp30_17
+    sens.A[2] = ACcp30_27
+    sens.A[3] = ACcp30_37
+    sens.OMP[1] = OPcp30_17
+    sens.OMP[2] = OPcp30_27
+    sens.OMP[3] = OPcp30_37
 
  
 
