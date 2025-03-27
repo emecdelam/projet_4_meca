@@ -61,8 +61,12 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     Mz = 0.0
     idpt = mbs_data.xfidpt[ixF]
     dxF = mbs_data.dpt[1:, idpt]
+    
+    import json
+    with open('constants.json', 'r') as file:
+        dic = json.load(file)
 
-    if ixF == mbs_data.extforce_id['ExtForce_0']:
+    if ixF == mbs_data.extforce_id['ExtForce_0'] or ixF == mbs_data.extforce_id['ExtForce_1'] or ixF == mbs_data.extforce_id['ExtForce_2'] or ixF == mbs_data.extforce_id['ExtForce_3']:
         import tgc_car_kine_wheel
         import tgc_bakker_contact
 
@@ -80,15 +84,8 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
             _, Fx, Fy, Fz = np.dot(np.transpose(Rsol), [0, FxR, FyR, FzR])
             Mz = np.dot(np.transpose(Rsol), [0, 0,0,MzR])[3]
 
-    # Example : Contact force with a wall when X coordinate is higher than 1m.
-    #           The force is perfectly horizontal (inertial frame)
-    # xlim = 1.0 # m
-    # kwall= 1e5 # N/m
-    # if PxF[1]>xlim:
-    #     Fx = (PxF[1]-xlim)*kwall
-
-    # Concatenating force, torque and force application point to returned array.
-    # This must not be modified.
+    elif ixF == mbs_data.extforce_id['body_force']:
+        Fz = dic['Fz']
     Swr = mbs_data.SWr[ixF]
     Swr[1:] = [Fx, Fy, Fz, Mx, My, Mz, dxF[0], dxF[1], dxF[2]]
 

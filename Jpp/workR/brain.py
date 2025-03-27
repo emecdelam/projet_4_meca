@@ -15,7 +15,8 @@ import matplotlib.pyplot as plt
 params_path = 'constants.json'
 parameters: dict = {
     'Kext': 2000.0,
-    'Dext': 150.0
+    'Dext': 150.0,
+    'Fz':1000000
 }
 mbs_path = '../dataR/Jpp.mbs'
 
@@ -34,14 +35,16 @@ mbs_data = api.loader(mbs_path)
 
 # Configuration
 names = ["Analyse de la position pour plusieur Kext",
-         "Analyse de la position pour plusieur Dext"]
+         "Analyse de la position pour plusieur Dext", 
+         "Analyse de la position pour plusieur poids passager"]
 utils.log(f"Configuring names : {names}", utils.Level.INFO)
 
-labels = [('Temps [s]', 'Hauteur [m]') for i in range(2)]
+labels = [('Temps [s]', 'Hauteur du corps [m]') for i in range(2)]
 utils.log(f"Configuring labels : {labels}", utils.Level.INFO)
 
 params = [[{'Kext': 3000.0}, {'Kext': 1000.0},{'Kext': 500.0}],
-          [{'Dext': 300.0}, {'Dext': 100.0}, {'Dext' : 150.0}]]
+          [{'Kext':2000.0,'Dext': 300.0}, {'Dext': 100.0}, {'Dext' : 150.0}],
+          [{'Fz':2000000, 'Fz':3000000,'Fz':500000}]]
 utils.log(f"Configuring params : {params}", utils.Level.INFO)
 
 legends = [[f'Position du chariot avec {dict_str(i)}' for i in j] for j in params]
