@@ -35,7 +35,7 @@ def user_DrivenJoints(mbs_data, tsim):
     mbs_data.qd[id_i]  = 0
     mbs_data.q[id_i]   = -omega
     
-    
+    """
     id_k = mbs_data.joint_id["Joint_22"]
 
     mbs_data.qdd[id_k] = 0
@@ -47,7 +47,7 @@ def user_DrivenJoints(mbs_data, tsim):
     mbs_data.qdd[id_l] = 0
     mbs_data.qd[id_l]  = 10
     mbs_data.q[id_l]   = tsim * 10
-
+    """
     id_n = mbs_data.joint_id["Joint_29"]
 
     mbs_data.qdd[id_n] = 0
