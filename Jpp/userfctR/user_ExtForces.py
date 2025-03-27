@@ -62,20 +62,23 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     idpt = mbs_data.xfidpt[ixF]
     dxF = mbs_data.dpt[1:, idpt]
 
-    import tgc_car_kine_wheel
-    import tgc_bakker_contact
+    if ixF == mbs_data.extforce_id['ExtForce_0']:
+        import tgc_car_kine_wheel
+        import tgc_bakker_contact
 
-    pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
+        pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
+        import json
+        with open('constants.json', 'r') as file:
+            dic = json.load(file)
+        K = dic['Kext']
+        D = dic['Dext']
 
-    K = 40000
-    D = 3000
-
-    if pen > 0:
-        FzR = pen * K - D * VxF[3]
-        FzR = FzR[0]
-        FxR, FyR, MzR = tgc_bakker_contact.tgc_bakker_contact(FzR, anglis, ancamb, gliss, mbs_data)
-        _, Fx, Fy, Fz = np.dot(np.transpose(Rsol), [0, FxR, FyR, FzR])
-        Mz = np.dot(np.transpose(Rsol), [0, 0,0,MzR])[3]
+        if pen > 0:
+            FzR = pen * K - D * VxF[3]
+            FzR = FzR[0]
+            FxR, FyR, MzR = tgc_bakker_contact.tgc_bakker_contact(FzR, anglis, ancamb, gliss, mbs_data)
+            _, Fx, Fy, Fz = np.dot(np.transpose(Rsol), [0, FxR, FyR, FzR])
+            Mz = np.dot(np.transpose(Rsol), [0, 0,0,MzR])[3]
 
     # Example : Contact force with a wall when X coordinate is higher than 1m.
     #           The force is perfectly horizontal (inertial frame)
