@@ -64,13 +64,12 @@ except Exception:
 fig = plt.figure(num='Example of plot')
 axis = fig.gca()
 
-# Plotting data's
-axis.plot(results.q[:, 0], results.q[:, 1], label='q[1]')
+axis.plot(results.q[:, 0], results.q[:, 3], label='q[1]')
 
 # Figure enhancement
 axis.grid(True)
 axis.set_xlim(left=mbs_dirdyn.get_options('t0'), right=mbs_dirdyn.get_options('tf'))
 axis.set_xlabel('Time (s)')
-axis.set_ylabel('Coordinate value (m or rad)')
+axis.set_ylabel('X position of the chassis')
 
 plt.show()

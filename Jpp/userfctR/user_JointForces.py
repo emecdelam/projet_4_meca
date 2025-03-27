@@ -29,11 +29,21 @@ def user_JointForces(mbs_data, tsim):
     # cleaning previous forces value
     mbs_data.Qq[1:] = 0.
 
-    id_j = mbs_data.joint_id["Joint_22"]
-    mbs_data.Qq[id_j] = 100
+    if tsim < 2:
+
+        id_j = mbs_data.joint_id["Joint_22"]
+        mbs_data.Qq[id_j] = 100
     
-    id_j = mbs_data.joint_id["Joint_23"]
-    mbs_data.Qq[id_j] = 100
+        id_j = mbs_data.joint_id["Joint_23"]
+        mbs_data.Qq[id_j] = 100
+
+    if tsim > 2:
+
+        id_j = mbs_data.joint_id["Joint_26"]
+        mbs_data.Qq[id_j] = -mbs_data.qd[id_j] * 1000
+        
+        id_j = mbs_data.joint_id["Joint_27"]
+        mbs_data.Qq[id_j] = -mbs_data.qd[id_j] * 1000
 
     # Example: damping in joint number 5
     # D = 0.5 # N/(m/s)
