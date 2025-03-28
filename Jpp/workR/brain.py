@@ -16,12 +16,7 @@ params_path = 'constants.json'
 parameters: dict = {
     'Kext': 2000.0,
     'Dext': 150.0,
-    'Fz':1000000,
-    'L0sd': 0.625,
-    'Ksd': 80000.0,
-    'Dsd': 28000.0,
-    'Ks' : 5000.0,
-    'L0s' : 0.5 
+    'Fz':1000000
 }
 mbs_path = '../dataR/Jpp.mbs'
 

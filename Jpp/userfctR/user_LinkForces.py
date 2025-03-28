@@ -26,35 +26,33 @@ def user_LinkForces(Z, Zd, mbs_data, tsim, identity):
         The force in the current link.
 
     """
-    import json
-    with open('constants.json', 'r') as file:
-        dic = json.load(file)
-    Flink = 0.0
-    
-    L0sd = dic["L0sd"]
-    Ksd = dic["Ksd"]
-    Dsd = dic["Dsd"]
-    Ks = dic["Ks"]
-    L0s = dic["L0s"]
-    if (identity == mbs_data.link_id['Link_0'] or 
-        identity == mbs_data.link_id['Link_1']):
-        Flink = Ksd*(Z-L0sd) + Dsd * Zd
 
-    if (identity == mbs_data.link_id['Link_2'] or 
-        identity == mbs_data.link_id['Link_3'] or
-        identity == mbs_data.link_id['Link_4'] or
-        identity == mbs_data.link_id['Link_5']):
-        L0 = 0.5
-        K = 5000
-        D = 120
-        Flink = Ks*(Z-L0s)
-    if identity == mbs_data.link_id['Link_6']:
-        L0 = 0.5
-        K = 1000000
+    Flink = 0.0
+    if identity == mbs_data.link_id['Link_0']:
+        L0 = 0.625
+        K = 600000
+        D = 80000
+        Flink = K*(Z-L0) + D * Zd
+    if identity == mbs_data.link_id['Link_1']:
+        L0 = 0.625
+        K = 600000
+        D = 80000
+        Flink = K*(Z-L0) + D * Zd
+    if identity == mbs_data.link_id['Link_2']:
+        L0 = 0.3
+        K = 50000
         Flink = K*(Z-L0)
-    if identity == mbs_data.link_id['Link_7']:
-        L0 = 0.5
-        K = 1000000
+    if identity == mbs_data.link_id['Link_3']:
+        L0 = 0.3
+        K = 50000
+        Flink = K*(Z-L0)
+    if identity == mbs_data.link_id['Link_4']:
+        L0 = 0.3
+        K = 50000
+        Flink = K*(Z-L0)
+    if identity == mbs_data.link_id['Link_5']:
+        L0 = 0.3
+        K = 50000
         Flink = K*(Z-L0)
 
     if identity == mbs_data.link_id['Link_8']:
