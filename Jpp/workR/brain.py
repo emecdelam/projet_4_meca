@@ -14,15 +14,15 @@ import matplotlib.pyplot as plt
 # Constants
 params_path = 'constants.json'
 parameters: dict = {
-    'L0sd': 0.625,
-    'Ksd': 600000,
-    'Dsd': 80000,
-    'L0s': 0.3,
-    'Ks': 50000,
-    'Dd': 120,
-    'Kext': 2000.0,
-    'Dext': 150.0,
-    'Fz': 1000000
+    "L0sd": 0.625,
+    "Ksd": 600000,
+    "Dsd": 80000,
+    "L0s": 0.3,
+    "Ks": 50000,
+    "Dd": 120,
+    "Kext": 1600000.0,
+    "Dext": 150.0,
+    "Fz": 1000000
 }
 mbs_path = '../dataR/Jpp.mbs'
 
@@ -78,7 +78,7 @@ with Progress() as progress:
                     utils.log("Starting new dynamic simulation", utils.Level.INFO)
                     par.append_parameters(params_path,[params[plot][curve]])
                     results, nt0, ntf = api.dir_dyn(mbs_data)
-                    axis.plot(results.q[:, 0], results.q[:, 1], label=legends[plot][curve])
+                    axis.plot(results.q[:, 0], results.q[:, 4], label=legends[plot][curve])
                     progress.update(taks_dyn, advance=1)
                     t0 = min(t0, nt0)
                     tf = max(tf, ntf)

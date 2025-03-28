@@ -49,7 +49,7 @@ mbs_part.run()
 # =============================================================================
 mbs_data.process = 3
 mbs_dirdyn = Robotran.MbsDirdyn(mbs_data)
-mbs_dirdyn.set_options(dt0=1e-3, tf=4.0, save2file=1)
+mbs_dirdyn.set_options(dt0=1e-3, tf=5.0, save2file=1)
 results = mbs_dirdyn.run()
 
 # %%===========================================================================
@@ -64,8 +64,7 @@ except Exception:
 fig = plt.figure(num='Example of plot')
 axis = fig.gca()
 
-axis.plot(results.q[:, 0], results.q[:, 3], label='q[1]')
-
+axis.plot(results.q[:, 0], results.q[:, 1], label='q[1]')
 # Figure enhancement
 axis.grid(True)
 axis.set_xlim(left=mbs_dirdyn.get_options('t0'), right=mbs_dirdyn.get_options('tf'))
