@@ -5,3 +5,7 @@ __pycache__/
 resultsR/*.res
 
 animationR/*
+
+*.res
+
+*.anim
