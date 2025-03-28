@@ -39,44 +39,37 @@ def user_LinkForces(Z, Zd, mbs_data, tsim, identity):
         D = 80000
         Flink = K*(Z-L0) + D * Zd
     if identity == mbs_data.link_id['Link_2']:
-        L0 = 0.5
-        K = 150000
+        L0 = 0.3
+        K = 50000
         Flink = K*(Z-L0)
     if identity == mbs_data.link_id['Link_3']:
-        L0 = 0.5
-        K = 150000
+        L0 = 0.3
+        K = 50000
         Flink = K*(Z-L0)
     if identity == mbs_data.link_id['Link_4']:
-        L0 = 0.5
-        K = 150000
+        L0 = 0.3
+        K = 50000
         Flink = K*(Z-L0)
     if identity == mbs_data.link_id['Link_5']:
-        L0 = 0.5
-        K = 150000
+        L0 = 0.3
+        K = 50000
         Flink = K*(Z-L0)
-    if identity == mbs_data.link_id['Link_6']:
-        L0 = 0.5
-        K = 100000000
-        Flink = K*(Z-L0)
-    if identity == mbs_data.link_id['Link_7']:
-        L0 = 0.5
-        K = 100000000
-        Flink = K*(Z-L0)
+
     if identity == mbs_data.link_id['Link_8']:
         L0 = 0.5
-        D = 10000
+        D = 120
         Flink = D * Zd
     if identity == mbs_data.link_id['Link_9']:
         L0 = 0.5
-        D = 10000
+        D = 120
         Flink = D * Zd
     if identity == mbs_data.link_id['Link_10']:
         L0 = 0.5
-        D = 10000
+        D = 120
         Flink = D * Zd
     if identity == mbs_data.link_id['Link_11']:
         L0 = 0.5
-        D = 10000
+        D = 120
         Flink = D * Zd
     # Example: linear spring
     # k = 1000 #N/m
