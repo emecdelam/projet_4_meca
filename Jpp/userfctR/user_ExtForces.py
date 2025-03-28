@@ -61,19 +61,16 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
     Mz = 0.0
     idpt = mbs_data.xfidpt[ixF]
     dxF = mbs_data.dpt[1:, idpt]
-    
-    import json
-    with open('constants.json', 'r') as file:
-        dic = json.load(file)
+
 
     if ixF == mbs_data.extforce_id['ExtForce_0'] or ixF == mbs_data.extforce_id['ExtForce_1'] or ixF == mbs_data.extforce_id['ExtForce_2'] or ixF == mbs_data.extforce_id['ExtForce_3']:
         import tgc_car_kine_wheel
         import tgc_bakker_contact
 
         pen, rz, anglis, ancamb, gliss, Pcontact, Vcontact, Rsol, dxF = tgc_car_kine_wheel.tgc_car_kine_wheel(PxF, RxF, VxF, OMxF, mbs_data)
-        import json
+        from json import load as j_load
         with open('constants.json', 'r') as file:
-            dic = json.load(file)
+            dic = j_load(file)
         K = dic['Kext']
         D = dic['Dext']
 

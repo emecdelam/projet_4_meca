@@ -14,9 +14,15 @@ import matplotlib.pyplot as plt
 # Constants
 params_path = 'constants.json'
 parameters: dict = {
+    'L0sd': 0.625,
+    'Ksd': 600000,
+    'Dsd': 80000,
+    'L0s': 0.3,
+    'Ks': 50000,
+    'Dd': 120,
     'Kext': 2000.0,
     'Dext': 150.0,
-    'Fz':1000000
+    'Fz': 1000000
 }
 mbs_path = '../dataR/Jpp.mbs'
 
