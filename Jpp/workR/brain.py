@@ -9,6 +9,7 @@ import parameter_manager as par
 from rich.progress import Progress
 from itertools import chain
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 # Constants
@@ -86,6 +87,7 @@ with Progress() as progress:
                     progress.update(taks_dyn, advance=1)
                     t0 = min(t0, nt0)
                     tf = max(tf, ntf)
+                    np.savez(f"{legends[plot][curve]}", results)
                 except Exception as e:
                     utils.log(f"Failed to get the curve due to {e}", utils.Level.ERROR)
             api.plot_finalizer(axis, (t0, tf), ylims[plot])
