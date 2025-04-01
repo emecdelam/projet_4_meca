@@ -75,12 +75,16 @@ def user_ExtForces(PxF, RxF, VxF, OMxF, AxF, OMPxF, mbs_data, tsim, ixF):
         D = dic['Dext']
 
         if pen > 0:
+            if ixF == mbs_data.extforce_id['ExtForce_2'] or ixF == mbs_data.extforce_id['ExtForce_3']:
+                pen /= 2
             FzR =  pen * K - D * VxF[3]
             FzR = FzR[0]
             FxR, FyR, MzR = tgc_bakker_contact.tgc_bakker_contact(FzR, anglis, ancamb, gliss, mbs_data)
+            
+            if ixF == mbs_data.extforce_id['ExtForce_2'] or ixF == mbs_data.extforce_id['ExtForce_3']:
+                FzR *= 2
             _, Fx, Fy, Fz = np.dot(np.transpose(Rsol), [0, FxR, FyR, FzR])
-            Mz = np.dot(np.transpose(Rsol), [0, 0,0,MzR])[3]
-
+            Mz = np.dot(np.transpose(Rsol), [0, 0,0,MzR])[3] 
     #if ixF == mbs_data.extforce_id['ExtForce_4']:
     #    Fz += dic['Fz']
     
